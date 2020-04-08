@@ -1,0 +1,16 @@
+{
+	"name": "BIM",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "base",
+	"summary": "BIM",
+	"depends": "",
+	"description": "Construction",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-warning",
+	"fa":"fa-home",
+	"sequence":"10",
+	"installed":"0"
+}

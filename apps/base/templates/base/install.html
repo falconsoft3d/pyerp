@@ -1,0 +1,202 @@
+{% load static erp_tags bootstrap4 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> {{ user|get_company_name }} | {{ user|get_company_slogan }} </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{% static '.' %}/dist/favicon.png" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static '/plugins/fontawesome-free/css/all.min.css' %}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}plugins/toastr/toastr.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="{% static '/dist/css/adminlte.min.css' %}">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    {{ form.media }}
+  {% block head %}
+  {% endblock %}
+  <style>
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #563D7C !important;
+    margin-top: -2px;
+    border: 1px solid #ced4da;
+  }
+  .select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0px;
+  }
+  .select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: calc(2.25rem + 2px);
+    padding-top: 7px;
+    padding-left: .375rem;
+  }
+  .select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+  .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: calc(2.25rem + 2px);
+    padding-top: 7px;
+    padding-left: .375rem;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    top: 75%;
+  }
+</style>
+</head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+         <img src="{{ MEDIA_URL }}logo/pyerp_logo.png" alt="PyERP" style="opacity: .8; margin-left: 12px;" height="80px">
+      </div>
+
+      <div class="row">
+      <div class="col-md-2 order-md-1">
+      </div>
+        <div class="col-md-8 order-md-1">
+          <form action="{% url 'home:home_easy'%}" class="needs-validation" novalidate method="POST">
+            {% csrf_token %}
+            {% for hidden in form.hidden_fields %}
+                {{ hidden }}
+            {% endfor %}
+            {% for field in form.visible_fields %}
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                        {% bootstrap_field field show_label=False %}
+                    </div>
+                  <!-- /.col -->
+                  </div>
+                </div>
+                <!-- /.row -->
+            {% endfor %}
+
+
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Demo Data</label>
+            </div>
+
+              <hr>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Create</button>
+            {% csrf_token %}
+          </form>
+
+        {{ form.media.js }}
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 PyERP</p>
+          <!--
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+        -->
+      </footer>
+    </div>
+
+<!-- Page script -->
+<script>
+    function abrir_modal(url) {
+        $('#popup').load(url, function () {
+            $(this).modal('show');
+        });
+        return false;
+    }
+</script>
+  </body>
+</html>
+
+
+<!--
+<div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" value="admin" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Password</label>
+              <input type="password" class="form-control" id="pass1" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your Password
+              </div>
+            </div>
+
+              <div class="mb-3">
+              <label for="address">Repeat your password</label>
+              <input type="password" class="form-control" id="pass2" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your Password
+              </div>
+            </div>
+
+              <div class="mb-3">
+                <label for="country">Country</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="country">Language</label>
+                <select class="custom-select d-block w-100" id="language" required>
+                  <option value="">Choose...</option>
+                    <option>English</option>
+                    <option>Spanish</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+-->

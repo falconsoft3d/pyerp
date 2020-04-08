@@ -1,0 +1,251 @@
+{% load static %}
+{% include "webodoobim/header.html" %}
+
+    <!-- page_title_section start -->
+    <div class="page_title_section">
+        <div class="page_title_overlay"></div>
+        <div class="page_header">
+            <div class="container">
+                <div class="row">
+                    <!-- section_heading start -->
+                    <div class="col-lg-7 col-md-7 col-xs-12 col-sm-7">
+
+                        <h1> Contacto </h1>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5">
+                        <div class="sub_title_section">
+                            <ul class="sub_title">
+                                <li> <a href="{% url 'webodoobim:index' %}"> Inicio </a> <i class="fa fa-angle-right" aria-hidden="true"></i> </li>
+                                <li> Contacto </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page_title_section end -->
+    <!--tb contact wrapper start-->
+    <div class="tb_contact_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                    <div class="jp_top_jobs_category_wrapper tb_quality_servc_wraper">
+                        <div class="jp_top_jobs_category tb_contact_cntnt">
+                            <div class="jp_top_category_icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <h3><a href="#">address</a></h3>
+                            <p>Webstrot Web Company,
+                                <br> Dewas, M.P. India 455001
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                    <div class="jp_top_jobs_category_wrapper tb_quality_servc_wraper">
+                        <div class="jp_top_jobs_category tb_contact_cntnt">
+                            <div class="jp_top_category_icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h3><a href="#">phone</a></h3>
+                            <p>+1-804-548-5214
+                                <br> +1-804-548-5215
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                    <div class="jp_top_jobs_category_wrapper tb_quality_servc_wraper">
+                        <div class="jp_top_jobs_category tb_contact_cntnt">
+                            <div class="jp_top_category_icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h3><a href="#">Email</a></h3>
+                            <p>builder@example.com
+                                <br> support@example.com
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                    <div class="jp_top_jobs_category_wrapper tb_quality_servc_wraper">
+                        <div class="jp_top_jobs_category tb_contact_cntnt">
+                            <div class="jp_top_category_icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <h3><a href="#">web address</a></h3>
+                            <p>www.example.com
+                                <br> www.support.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--tb  contact wrapper end-->
+    <!-- map section start -->
+    <div class="map_main_wrapper">
+        <div id='map'>
+		</div>
+    </div>
+    <!-- map section end. -->
+    <!--tb newsletter wrapper start-->
+    <div class="tb_news_letter_wrapper">
+        <div class="container">
+            <div class="tb_nl_heading_wrapper">
+                <i class="fa fa-envelope"></i>
+                <h2> sign up for <span> Newsletter </span></h2>
+
+            </div>
+
+            <div class="tb_nl_form_wrapper">
+                <input type="text" placeholder="Email Here..">
+
+                <div class="letter_btn_wrapper">
+                    <a href="#">
+                        <div class="blob-btn letter_btn">
+                            subscribe
+                            <span class="blob-btn__inner">
+									   <span class="blob-btn__blobs">
+									   <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            </span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--tb newsletter wrapper end-->
+    <!--tb estimate form wrapper start-->
+    <div class="tb_estimate_form_wrapper tb_toppadder90 tb_bottompadder90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <form>
+                        <div class="tb_es_main_section">
+                            <div class="tb_es_input_width">
+                                <div class="contect_form1">
+                                    <input type="text" name="full_name" placeholder="Your Name" class="require">
+                                </div>
+                            </div>
+                            <div class="tb_es_input_width">
+                                <div class="contect_form1">
+                                    <input type="email" name="email" placeholder="Your Email" class="require" data-valid="email" data-error="Email should be valid.">
+                                </div>
+                            </div>
+                            <div class="tb_es_input_width">
+                                <div class="contect_form1">
+                                    <input type="text" name="phone" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="tb_es_input_width_full">
+                                <div class="contect_form4">
+                                    <textarea rows="6" name="message" placeholder="Your Message" class="require"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="tb_es_btn_div">
+
+                                <div class="response"></div>
+                                <div class="tb_es_btn_wrapper tb_toppadder20">
+                                    <button type="button" class="submitForm">send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="tb_work_txt_wrapper">
+                        <div class="abt_txt_box">
+                            <div class="tb_left_heading_wraper">
+                                <h4>Fill the Enquiry Form Here </h4>
+                                <h3>send a free <span> estimate </span> </h3>
+                                <h2><span></span></h2>
+                            </div>
+                            <p>Cras sed gravida ex. Praesent semper consequat nisl, id mollis mi semper ac. derit in voluptate velit esse cillum doore eu fgiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt eget gravida lectus. Vivamus arcu ante, varius a sem in,ulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt eget scelerisque sollicitudin.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tweet Feed Wrapper Start -->
+    <div class="twiter_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="tc_twtfd_wrapper">
+                    <div id="myCarousel" class="vertical-slider carousel vertical slide col-md-12" data-ride="carousel">
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs">
+                                <span data-slide="next" class="btn-vertical-slider fa fa-angle-up tc_up_btn"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-1">
+                                        <div class="tc_twitter_img_wrapper">
+                                            <i class="fa fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <div class="twiter_cntnt">
+                                            <p>@webstrot Font Awesome is always getting a little awesome-er. So here's what's new in the latest version
+                                                <br> ideas for new features? Help contribute.</p>
+                                            <span class="tc_date_wrapper">29 JUNE 2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-1">
+                                        <div class="tc_twitter_img_wrapper">
+                                            <i class="fa fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <div class="twiter_cntnt">
+                                            <p>@webstrot Font Awesome is always getting a little awesome-er. So here's what's new in the latest version
+                                                <br> ideas for new features? Help contribute.</p>
+                                            <span class="tc_date_wrapper">29 JUNE 2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 hidden-xs">
+                                <span data-slide="prev" class="btn-vertical-slider fa fa-angle-down tc_down_btn"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12 visible-xs">
+                                <span data-slide="next" class="btn-vertical-slider fa fa-angle-right tc_up_btn"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12 visible-xs">
+                                <span data-slide="prev" class="btn-vertical-slider fa fa-angle-left tc_down_btn"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% include "webodoobim/footer.html" %}

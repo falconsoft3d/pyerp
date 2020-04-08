@@ -1,0 +1,2 @@
+id,first_name,is_active,is_superuser,password,email
+1,Anonimous,False,False,pbkdf2_sha256$150000$YhAfp0Fal1Su$bpZBtXY0yqes+1q7pBgrIMXfGEtu4s3Qc0oMJajXlwM=,email@pyerp.cl

@@ -1,0 +1,513 @@
+{% load static %}
+{% load erp_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PyERP is a generic ERP software used by manufacturers, distributors and services companies. It includes modules like accounting, CRM, sales, purchasing, website + e-commerce, point of sale, manufacturing, warehouse, project management, inventory and services.">
+    <meta name="author" content="PyERP">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="PyERP" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>PyERP | ERP in Django</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/fontawesome-free/css/all.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/swiper.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/default.min.css' %}" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="{% static 'home/favicon.png' %}">
+
+    <!-- Start of  Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4063f0e1-9d2d-460d-b5ad-af16a1e2a1dc"> </script>
+    <!-- End of  Zendesk Widget script -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148891085-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148891085-1');
+    </script>
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'home/img/logo.png' %}" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">Services</a>
+                </li>
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" target="_blank"  href="https://falconsoft3d.github.io/pyerp/">Help</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/Pyerp-100686811301733/">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://t.me/pyerp">
+                        <i class="fas fa-circle fa-stack-2x twitter"></i>
+                        <i class="fab fa-telegram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container" style="margin-top: 0px;">
+                            <h1><span class="turquoise">PyERP</span> Django ERP</h1>
+                            <a target="_blank" href="https://github.com/falconsoft3d/pyerp"> <h3><span class="turquoise">github:pyerp</span></h3></a>
+                            <p class="p-large">Marlon Falcón Hernández, mfalcon@ynext.cl</p>
+
+                            <a class="btn-solid-lg page-scroll" href="{% url 'base:home' %}">Login</a>
+
+                            <h3 style="margin-top:50px;">Install PyERP using the following command</h3>
+
+                            <pre>
+                        <code class="linux">
+git clone https://github.com/falconsoft3d/pyerp
+virtualenv env --python=python3
+source env/bin/activate
+cd pyerp
+pip3 install -r requirements.txt
+python manage.py init_pyerp
+python manage.py runserver
+                    </code>
+                    </pre>
+
+
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'home/img/pyerp.png' %}" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>PyERP Architecture</h2>
+                    <p class="p-heading p-large">We serve small and medium sized companies in all tech related industries with high quality growth services which are presented below</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="{% static 'home/images/services-icon-1.svg' %}" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Market Analysis</h4>
+                            <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks against the closest competitors</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="{% static 'home/images/services-icon-2.svg' %}" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Opportunity Scan</h4>
+                            <p>Once the market analysis process is completed our staff will search for opportunities that are in reach</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="{% static 'home/images/services-icon-3.svg' %}" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Action Plan</h4>
+                            <p>With all the information in place you will be presented with an action plan that your company needs to follow</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+
+
+    <!-- Details 1 -->
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Design And Plan Your Business Growth Steps</h2>
+                        <p>Use our staff and our expertise to design and plan your business growth strategy. Evolo team is eager to advise you on the best opportunities that you should look into</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'home/images/details-1-office-worker.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details Lightbox 1 -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'home/images/details-lightbox-1.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Design And Plan</h3>
+                    <hr>
+                    <h5>Core feature</h5>
+                    <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
+                    <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">List building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Easy database browsing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">User administration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Automate user signup</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Quick formatting tools</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Fast email checking</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 1 -->
+
+
+    <!-- Video -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Check Out The Video</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=en3p2emRLSg&t" data-effect="fadeIn">
+                                <img class="img-fluid" src="{% static 'home/images/video-frame.svg' %}"  alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                    <p>This video will show you a case study for one of our <strong>Major Customers</strong> and will help you understand why your startup needs Evolo in this highly competitive market</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of video -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'home/images/testimonials-2-men-talking.svg' %}"  alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <h2>Testimonials</h2>
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'home/images/testimonial-1.svg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Evolo right away at the special price.</p>
+                                            <p class="testimonial-author">Jude Thorn - Designer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'home/images/testimonial-2.svg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Evolo has always helped or startup to position itself in the highly competitive market of mobile applications. You will not regret using it!</p>
+                                            <p class="testimonial-author">Marsha Singer - Developer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'home/images/testimonial-3.svg' %}"  alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Love their services and was so amazed with the support and results that I purchased Evolo for two years in a row. They are awesome.</p>
+                                            <p class="testimonial-author">Roy Smith - Marketer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+
+
+    <!-- About -->
+    <div id="about" class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About The Team</h2>
+                    <p class="p-heading p-large">Meat our team of specialized marketers and business developers which will help you research new products and launch them in new emerging markets</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="{% static 'home/img/marlon.jpg' %}"  alt="alternative">
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large"><strong>Marlon Falcón</strong></p>
+                        <p class="job-title">Founder</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="https://www.facebook.com/falconsoft.sa">
+                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="https://github.com/falconsoft3d">
+                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                                    <i class="fab fa-github fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span> <!-- end of social-icons -->
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of about -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>mfalcon@ynext.cl</h2>
+                    <h2>(+56) 9 4299 4534</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <div class="col-lg-12">
+
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About PyERP</h4>
+                        <p>We're passionate about offering some of the best business growth services for startups</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Github <a class="turquoise" target="_blank" href="https://github.com/falconsoft3d/pyerp">github.com/falconsoft3d/pyerp</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a target="_blank" href="https://www.facebook.com/Pyerp-100686811301733/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a target="_blank" href="https://t.me/pyerp">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © Ynext <a href="https://ynext.cl">Ynext</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{% static 'home/js/highlight.min.js'%}"></script>
+    <script src="{% static 'home/js/jquery.min.js'%}"></script>
+    <script src="{% static 'home/js/popper.min.js'%}"></script>
+    <script src="{% static 'home/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'home/js/jquery.easing.min.js'%}"></script>
+    <script src="{% static 'home/js/swiper.min.js'%}"></script>
+    <script src="{% static 'home/js/jquery.magnific-popup.js'%}"></script>
+    <script src="{% static 'home/js/validator.min.js'%}"></script>
+    <script src="{% static 'home/js/scripts.js'%}"></script>
+</body>
+</html>

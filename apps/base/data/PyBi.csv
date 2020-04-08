@@ -1,0 +1,5 @@
+name,type,model,parameter,color,font_color,icon,dashboard,url
+CUSTOMERS,indicator,PyPartner,customer=True,#007bff,white,fa-home,home,base:partners
+SUPPLIERS,indicator,PyPartner,customer=True,indianred,white,fa-home,home,base:partners
+PRODUCTS,indicator,PyPartner,customer=True,#17a2b8,white,fa-home,home,base:partners
+USERS,indicator,PyPartner,customer=True,#dc3545,white,fa-home,home,base:partners

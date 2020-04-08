@@ -1,0 +1,35 @@
+input[required],input[required]:focus {
+    background-color: #c1f0ff91;
+}
+
+
+.dataTable th:last-child, td {
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    color: #666666;
+}
+
+
+.login-logo,
+.register-logo {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.login-box,
+.register-box {
+  margin: 5% auto;
+  width: 360px;
+}
+
+.breadcrumb {
+  padding: .75rem 1rem .75rem 0rem;
+  background-color: Transparent;
+}
+.breadcrumb-item a {
+  color: #563D7C;
+  font-weight: bold;
+}

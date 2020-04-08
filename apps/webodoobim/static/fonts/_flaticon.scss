@@ -1,0 +1,71 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 23/06/2018 10:29
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-menu:before { content: "\f100"; }
+.flaticon-tools:before { content: "\f101"; }
+.flaticon-next:before { content: "\f102"; }
+.flaticon-delivery-truck:before { content: "\f103"; }
+.flaticon-bar-chart:before { content: "\f104"; }
+.flaticon-graduation-cap:before { content: "\f105"; }
+.flaticon-play-button:before { content: "\f106"; }
+.flaticon-leaf:before { content: "\f107"; }
+.flaticon-food:before { content: "\f108"; }
+.flaticon-shopping-cart:before { content: "\f109"; }
+.flaticon-house:before { content: "\f10a"; }
+.flaticon-industry:before { content: "\f10b"; }
+.flaticon-bank:before { content: "\f10c"; }
+.flaticon-home:before { content: "\f10d"; }
+.flaticon-roll:before { content: "\f10e"; }
+.flaticon-open-wrench-tool-silhouette:before { content: "\f10f"; }
+    
+    $font-Flaticon-menu: "\f100";
+    $font-Flaticon-tools: "\f101";
+    $font-Flaticon-next: "\f102";
+    $font-Flaticon-delivery-truck: "\f103";
+    $font-Flaticon-bar-chart: "\f104";
+    $font-Flaticon-graduation-cap: "\f105";
+    $font-Flaticon-play-button: "\f106";
+    $font-Flaticon-leaf: "\f107";
+    $font-Flaticon-food: "\f108";
+    $font-Flaticon-shopping-cart: "\f109";
+    $font-Flaticon-house: "\f10a";
+    $font-Flaticon-industry: "\f10b";
+    $font-Flaticon-bank: "\f10c";
+    $font-Flaticon-home: "\f10d";
+    $font-Flaticon-roll: "\f10e";
+    $font-Flaticon-open-wrench-tool-silhouette: "\f10f";

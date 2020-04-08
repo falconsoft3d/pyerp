@@ -1,0 +1,215 @@
+{% load static %}
+{% load erp_tags %}
+<!DOCTYPE html>
+<!--
+Template Name: The Billtro
+Version: 1.0.0
+Author:
+Website:
+Purchase:
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx">
+<!--[endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>BIM Odoo | {{ user|get_company_name }}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="smart pest" />
+    <meta name="keywords" content="The Billtro /construction/ builder" />
+    <meta name="author" content="" />
+    <meta name="MobileOptimized" content="320" />
+    <!--start theme style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/meanmenu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slicknav.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'venobox/css/venobox.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/camera.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <!-- favicon link-->
+    <link rel="shortcut icon" type="image/icon" href="{% static 'img/favicon.png' %}">
+</head>
+
+<body>
+    <!-- preloader Start -->
+    <div id="preloader">
+        <div id="status">
+            <img src="{% static 'images/preloader.gif' %}" id="preloader_image" alt="loader">
+        </div>
+    </div>
+    <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+    <!-- tb header Start -->
+    <header>
+        <div class="topbar">
+            <div class="container">
+
+                <div class="top_header_add hidden-xs hidden-sm">
+                    <ul>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> + 56 9 4299 4534</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> ventas@ynext.cl</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Icon -->
+                <div class="social_links_wrapper">
+                    <div class="social_links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- /.Social Button -->
+                    <div class="header_login">
+
+                        <a href="http://bim.odoobim.com">
+                            <div class="blob-btn">
+                                Demo
+                                <span class="blob-btn__inner">
+									   <span class="blob-btn__blobs">
+									   <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                </span>
+                                </span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--bottom header wrappper start-->
+        <div class="transparent-menu header-area hidden-menu-bar stick">
+
+            <div class="container">
+                <div class="row">
+                    <div class="bt_main_menu_wrapper">
+                        <div class="main-menu-wrapper clear-fix">
+
+                            <div class="logo float-left">
+                                <a href="{% url 'webodoobim:contact' %}"><img style="width:120px;" src="{% static 'img/logo-odoo-bim-w.png' %}" alt="LOGO"></a>
+                            </div>
+
+                            <div class="serach-header bt_search_wrapper_respnsive hidden-lg hidden-md">
+                                <button class="searchd"><i class="fa fa-search"></i></button>
+                                <div class="searchbox">
+                                    <button class="close">×</button>
+                                    <form>
+                                        <input type="search" placeholder="Search …">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sc_navigation hidden-sm hidden-xs">
+                            <nav id="primary-nav" class="dropdown nav_left_margin">
+                                <ul class="dropdown menu cart_dropdown_wrapper">
+                                    <li><a href="{% url 'webodoobim:index' %}" title="">Inicio</a>
+                                    </li>
+                                    <li><a href="{% url 'webodoobim:about' %}" title="">Acerca De</a>
+                                    </li>
+                                    <li><a href="{% url 'webodoobim:services' %}" title="">Servicios</a>
+                                    </li>
+                                    <li><a href="project.html" title="">Videos</a></li>
+                                    <li><a href="project.html" title="">Presentación</a></li>
+                                    <li><a href="{% url 'webodoobim:blog' %}" title="">Blog</a>
+                                    <li><a href="{% url 'webodoobim:contact' %}" title="">Contacto</a>
+                                    </li>
+
+
+                                </ul>
+                            </nav>
+                            <!-- Menu -->
+                            <!--search -->
+                            <div class="serach-header">
+                                <button class="searchd"><i class="fa fa-search"></i></button>
+                                <div class="searchbox">
+                                    <button class="close">×</button>
+                                    <form>
+                                        <input type="search" placeholder="Search …">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- cart code -->
+
+                        </div>
+                        <!-- /.main-menu-wrapper -->
+                        <!-- mobile menu area start -->
+                        <div class="mobile-menu-area visible-sm visible-xs">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-xs-12 cc_menu_top_margin">
+                                        <!-- mobile menu start -->
+                                        <div class="mobile-menu">
+                                            <nav>
+                                                <ul class="nav">
+                                                    <li><a href="index.html">Home</a>
+                                                    </li>
+                                                    <li><a href="about_us.html">about us</a>
+                                                    </li>
+                                                    <li><a href="services.html">services</a>
+                                                    </li>
+                                                    <li><a href="#">pages</a>
+													 <ul>
+														<li><a href="about_us.html" title=""> about us</a></li>
+														<li><a href="error.html" title=""> 404 error</a></li>
+														<li><a href="project.html" title=""> project</a></li>
+														<li><a href="services.html" title=""> services</a></li>
+														<li><a href="project_single.html" title=""> project single</a></li>
+
+													</ul>
+                                                    </li>
+													<li><a href="project.html" title="">project</a>
+														<ul>
+															<li><a href="project.html" title=""> project</a></li>
+															<li><a href="project_single.html" title=""> project single</a></li>
+														</ul>
+													</li>
+													 <li><a href="blog_single.html" title="">blog</a>
+														<ul>
+															<li><a href="blog_single.html" title="">blog single</a></li>
+															<li><a href="blog_category.html" title=""> blog category</a></li>
+														</ul>
+													</li>
+                                                    <li><a href="contact_us.html"> contact us</a>
+                                                    </li>
+
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <!-- mobile menu end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile menu area end -->
+                    </div>
+                    <!-- /.main-menu-wrapper -->
+                </div>
+            </div>
+        </div>
+
+        <!--header section end-->
+    </header>

@@ -1,0 +1,16 @@
+{
+	"name": "Marketplace",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "Base",
+	"summary": "Marketplace",
+	"depends": "",
+	"description": "Marketplace Site",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-danger",
+	"fa":"fa-tasks",
+	"sequence":"1",
+	"installed":"0"
+}

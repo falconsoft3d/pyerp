@@ -1,0 +1,26 @@
+<li class="nav-item has-treeview">
+    <a href="#" class="nav-link">
+      <i class="fa fa-cube nav-icon"></i>
+      <p>
+        x {{ _('Inventary') }}
+        <i class="fas fa-angle-left right"></i>
+      </p>
+    </a>
+
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'base:products' %}" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Productos</p>
+          </a>
+        </li>
+        <li class="nav-item">
+              <a href="{% url 'base:product-category' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Categorías de Productos</p>
+              </a>
+        </li>
+
+    </ul>
+
+  </li>

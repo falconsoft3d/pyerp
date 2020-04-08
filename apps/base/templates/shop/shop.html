@@ -1,0 +1,97 @@
+{% extends extend_from %}
+{% load erp_tags %}
+{% block content %}
+
+    <!-- Services -->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-3">
+            <h1 class="my-4">{{ _("Category") }}</h1>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Category 1</a>
+                <a href="#" class="list-group-item">Category 2</a>
+                <a href="#" class="list-group-item">Category 3</a>
+            </div>
+        </div>
+        <!-- /.col-lg-3 -->
+        <div class="col-lg-9">
+            <div class="row">
+                {% for object in object_list %}
+                    <div class=" col-lg-3 col-md-6 mb-4">
+                        <div class="h-100">
+                            <a href="{% url url_web_product object.id %}">
+                                <img style="padding:2px;" class="card-img-top" src="{{ object.img.url }}" alt="">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="{% url url_web_product object.id %}">{{ object.name }}</a></h5>
+                                {% if user|web_show_price %}
+                                    <h6 class="product-title" style="color:red;"> {% if user|currency_position == 'before' %} {{ user|currency_symbol }} {{ object.price }} {% else %} {{ object.price }} {{ user|currency_symbol }} {% endif %} </h6>
+                                {% endif %}
+                            </div>
+                            <div>
+                                {% if object.code %}
+                                 <small class="text-muted"><b>SKU:</b> {{ object.code }}</small>
+                                 {% else %}
+                                    <small class="text-muted"><b>SKU:</b> {{ object.id }}</small>
+                                 {% endif %}
+                                 {% if object.bar_code %}
+                                    <small class="text-muted"><b>{{ _('BAR CODE') }}:</b> {{ object.bar_code }}</small>
+                                 {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col d-flex align-items-center mr-auto">
+                    <span class="page-current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+                </div>
+                <div class="col">
+                    <div class="float-right">
+                        {# .... **Now the pagination section** .... #}
+                        {% if is_paginated %}
+                            <nav aria-label="...">
+                                <ul class="pagination" style="margin-bottom: 0;">
+                                    {% if page_obj.has_previous %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">{{ _('Previous') }}</a>
+                                        </li>
+                                    {% else %}
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">{{ _('Previous') }}</a>
+                                        </li>
+                                    {% endif %}
+                                    {% for num in page_obj.paginator.page_range %}
+                                        {% ifequal num page_obj.number %}
+                                            <li class="page-item active">
+                                              <a class="page-link" href="?page={{ num }}">{{ num }} <span class="sr-only">(current)</span></a>
+                                            </li>
+                                        {% else %}
+                                            <li class="page-item"><a class="page-link" href="?page={{ num }}"> {{ num }}</a></li>
+                                        {% endifequal %}
+                                    {% endfor %}
+                                    {% if page_obj.has_next %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ page_obj.next_page_number }}">{{ _('Next') }}</a>
+                                        </li>
+                                    {% else %}
+                                        <li class="page-item disabled">
+                                          <a class="page-link" href="#" tabindex="-1">{{ _('Next') }}</a>
+                                        </li>
+                                    {% endif %}
+                                </ul>
+                            </nav>
+                         {% endif %}
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.col-lg-9 -->
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
+{% endblock %}

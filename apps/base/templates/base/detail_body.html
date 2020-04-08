@@ -1,0 +1,60 @@
+{% load humanize %}
+{% load erp_tags %}
+<div class="row">
+  <div class="col-sm-6">
+    {% if object.img %}
+      <img class="img img-responsive" border="1" name="image" src="{{ object.img.url }}" style="width: 90px; height: 90px;">
+    {% endif %}
+  </div>
+</div>
+<div class="form-row">
+  {% for field in master_fields %}
+    <div class="form-group row col-sm-6">
+      <label class="col-sm-2 col-xl-2 col-form-label" for="{{ field.field }}">{{ field.string }}</label>
+      <div class="col-sm-9">
+        <input type="text" readonly class="form-control-plaintext" id="{{field.field}}" value="{{ object|get_obj_attr:field.field }}"/>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class="row">
+  <table id="formset_table" class="table table-bordered table-striped table-borderless">
+    <thead>
+      <tr>
+        {% for field in detail_fields %}
+        <th>{{ field.string }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% if not detail %}
+        <tr>
+          {% for field in detail_fields %}
+          <td>&nbsp;</td>
+          {% endfor %}
+        </tr>
+      {% endif %}
+      {% for object in detail %}
+        <tr>
+          {% for field in detail_fields %}
+            <td class="{{ field.align }}">
+              {% if field.field == 'tax_id' %}
+                {% for tax in object.tax_id.all %}
+                  <span class="right badge badge-primary">{{ tax }}</span>
+                {% endfor %}
+              {% else %}
+                {% if  field.humanize %}
+                  {{ object|get_obj_attr:field.field|intcomma }}
+                {% else %}
+                  {{ object|get_obj_attr:field.field }}
+                {% endif %}
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+</div>

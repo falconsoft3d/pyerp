@@ -1,0 +1,55 @@
+{% extends "home/home.html" %}
+{% load erp_tags %}
+
+{% block content %}
+  <!-- Services -->
+
+<!--
+{{ web_parameter.register_user }}
+-->
+
+
+
+
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        {% for post in object_list %}
+        <div class="col-md-6">
+          <div style="margin-top:20px;">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.created_on }}</p>
+            <p>{{ post.content|slice:":200" }}...</p>
+            <p><a class="btn btn-primary" href="{% url 'home:post' post.id %}" role="button">Ver más »</a></p>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <div class="row">
+        <div class="mx-auto" style="margin-top: 30px;">
+            {% if is_paginated %}
+              <ul class="pagination">
+              {% if page_obj.has_previous %}
+                  <li>
+                      <span><a href="?page={{ page_obj.previous_page_number }}"> Anterior</a>&nbsp;</span>
+                  </li>
+              {% endif %}
+                  <li class="">
+                      <span> Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.</span>
+                  </li>
+              {% if page_obj.has_next %}
+                  <li>
+                      <span>&nbsp;<a href="?page={{ page_obj.next_page_number }}">Siguiente »</a></span>
+                  </li>
+              {% endif %}
+              </ul>
+          {% endif %}
+        </div>
+      </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+{% endblock %}

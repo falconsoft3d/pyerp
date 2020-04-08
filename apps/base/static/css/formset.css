@@ -1,0 +1,109 @@
+
+  .table .select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+    padding: 3px 0px;
+  }
+  .table .select2-container--default .select2-selection--single .select2-selection__clear {
+    display: none;
+  }
+  .table .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none;
+  }
+  .table .select2-container--default .select2-selection--multiple .select2-selection__clear {
+    left: 90%;
+    position: absolute;
+    top: 0%;
+  }
+  .table .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #563D7C !important;
+    border: 0px solid transparent;
+    margin-right: 1px;
+    padding: 0 1px;
+    font-size: 70%;
+  }
+  .table .select2-container--default .select2-selection--multiple {
+    padding: 3px 0px;
+  }
+  .table .select2-container .select2-search--inline .select2-search__field {
+    margin-top: 1px;
+  }
+  .table .select2-container {
+      width: 100% !important;
+      min-width: 12em !important;
+      height: calc(1.81245rem + 2px);
+  }
+  .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    height: calc(1.81245rem + 12px);
+    padding-top: 9px;
+    padding-left: .375rem;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    top: 75%;
+  }
+  .table .form-control {
+    -moz-appearance: textfield;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-size: 90%;
+    height: calc(1.81245rem + 2px);
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .custom-select {
+    -moz-appearance: textfield;
+    background-color: transparent;
+    border: 0px solid transparent;
+    box-shadow: None;
+    background: None;
+    padding: 0;
+  }
+  .breadcrumb {
+    padding: .75rem 1rem .75rem 0rem;
+    background-color: Transparent;
+  }
+  .breadcrumb-item a {
+    color: #563D7C;
+    font-weight: bold;
+  }
+  .card-header {
+    border-bottom: none;
+  }
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+  }
+  .card-footer {
+      background-color: transparent;
+  }
+  .empty-form {
+    display: none;
+  }
+  .table td, .table th {
+    padding: 0;
+    vertical-align: middle;
+    border-top: 0px;
+  }
+  .table thead {
+    padding: 0;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+  }
+  .table-striped tbody tr add-row {
+    background-color: transparent;
+  }
+  .table th:last-child, td {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+  }
+  .add-row, td a{
+      color: #563D7C !important;
+  }

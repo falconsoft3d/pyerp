@@ -1,0 +1,17 @@
+{
+	"name": "WebOdooBim",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "website",
+	"summary": "Web Odoo Bim",
+	"depends": "",
+	"description": "Web Odoo Bim",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-orange",
+	"fa":"fa fa-trophy",
+	"sequence":"1",
+	"installed":"0"
+
+}

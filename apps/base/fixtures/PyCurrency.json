@@ -1,0 +1,3008 @@
+[
+{
+    "model": "base.pycurrency",
+    "pk": 2,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Afgani afgano\u200b",
+        "alias": "AFN ",
+        "symbol": "\u060b",
+        "country": 1,
+        "iso": "AFN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 3,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Lek alban\u00e9s\u200b",
+        "alias": "ALL ",
+        "symbol": "L",
+        "country": 3,
+        "iso": "ALL ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 4,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 4,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 5,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 5,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 6,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Kwanza angole\u00f1o\u200b",
+        "alias": "AOA ",
+        "symbol": "Kz",
+        "country": 6,
+        "iso": "AOA ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 7,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 7,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 8,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 9,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 9,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Riyal saud\u00ed\u200b",
+        "alias": "SAR ",
+        "symbol": "\u0631.\u0633",
+        "country": 10,
+        "iso": "SAR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 10,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar argelino\u200b",
+        "alias": "DZD ",
+        "symbol": "\u062f.\u062c",
+        "country": 11,
+        "iso": "DZD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 11,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso Argentino\u200b",
+        "alias": "ARS ",
+        "symbol": "$",
+        "country": 12,
+        "iso": "ARS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 12,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dram armenio\u200b",
+        "alias": "AMD ",
+        "symbol": "\u058f / \u0564\u0580.",
+        "country": 13,
+        "iso": "AMD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 13,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Flor\u00edn arube\u00f1o\u200b",
+        "alias": "AWG ",
+        "symbol": "\u0192",
+        "country": 14,
+        "iso": "AWG ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 14,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar australiano\u200b",
+        "alias": "AUD ",
+        "symbol": "$",
+        "country": 15,
+        "iso": "AUD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 15,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 16,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 16,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar de Barbados\u200b",
+        "alias": "BBD ",
+        "symbol": "$",
+        "country": 20,
+        "iso": "BBD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 17,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 22,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 18,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar belice\u00f1o\u200b",
+        "alias": "BZD ",
+        "symbol": "$",
+        "country": 23,
+        "iso": "BZD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 19,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar bermude\u00f1o\u200b",
+        "alias": "BMD ",
+        "symbol": "$",
+        "country": 25,
+        "iso": "BMD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 20,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Marco convertible\u200b",
+        "alias": "BAM ",
+        "symbol": "KM o \u041a\u041c",
+        "country": 29,
+        "iso": "BAM ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 21,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Real brasile\u00f1o\u200b",
+        "alias": "BRL ",
+        "symbol": "R$",
+        "country": 31,
+        "iso": "BRL ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 22,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Lev b\u00falgaro\u200b",
+        "alias": "BGN ",
+        "symbol": "\u043b\u0432",
+        "country": 33,
+        "iso": "BGN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 23,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Occidental\u200b",
+        "alias": "XOF ",
+        "symbol": "Fr",
+        "country": 34,
+        "iso": "XOF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 24,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco de Burundi\u200b",
+        "alias": "BIF ",
+        "symbol": "Fr",
+        "country": 35,
+        "iso": "BIF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 25,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Escudo caboverdiano\u200b",
+        "alias": "CVE ",
+        "symbol": "$ o Esc",
+        "country": 37,
+        "iso": "CVE ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 26,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Riel camboyano\u200b",
+        "alias": "KHR ",
+        "symbol": "\u17db",
+        "country": 38,
+        "iso": "KHR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 27,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Central\u200b",
+        "alias": "XAF ",
+        "symbol": "Fr",
+        "country": 39,
+        "iso": "XAF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 28,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar canadiense\u200b",
+        "alias": "CAD ",
+        "symbol": "$",
+        "country": 40,
+        "iso": "CAD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 29,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Central\u200b",
+        "alias": "XAF ",
+        "symbol": "Fr",
+        "country": 42,
+        "iso": "XAF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 30,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso chileno\u200b",
+        "alias": "CLP ",
+        "symbol": "$",
+        "country": 43,
+        "iso": "CLP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 31,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Yuan chino\u200b",
+        "alias": "CNY ",
+        "symbol": "\u5143",
+        "country": 44,
+        "iso": "CNY ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 32,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 45,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 33,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Lira turca\u200b",
+        "alias": "TRY ",
+        "symbol": "\u20a4",
+        "country": 45,
+        "iso": "TRY ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 34,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso colombiano\u200b",
+        "alias": "COP ",
+        "symbol": "$",
+        "country": 46,
+        "iso": "COP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 35,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Col\u00f3n costarricense\u200b",
+        "alias": "CRC ",
+        "symbol": "\u20a1",
+        "country": 51,
+        "iso": "CRC ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 36,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Kuna croata\u200b",
+        "alias": "HRK ",
+        "symbol": "kn",
+        "country": 52,
+        "iso": "HRK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 37,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso cubano convertible",
+        "alias": "CUC ",
+        "symbol": "$",
+        "country": 53,
+        "iso": "CUC ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 38,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso cubano\u200b",
+        "alias": "CUP ",
+        "symbol": "$",
+        "country": 53,
+        "iso": "CUP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 39,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Corona danesa\u200b",
+        "alias": "DKK ",
+        "symbol": "kr",
+        "country": 55,
+        "iso": "DKK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 40,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 56,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 41,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso dominicano\u200b",
+        "alias": "DOP ",
+        "symbol": "$",
+        "country": 56,
+        "iso": "DOP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 42,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense\u200b",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 57,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 43,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra egipcia\u200b",
+        "alias": "EGP ",
+        "symbol": "\u00a3 or \u062c.\u0645",
+        "country": 58,
+        "iso": "EGP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 44,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Col\u00f3n salvadore\u00f1o\u200b",
+        "alias": "SVC ",
+        "symbol": "\u20a1",
+        "country": 59,
+        "iso": "SVC ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 45,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense\u200b",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 59,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 46,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Nakfa\u200b",
+        "alias": "ERN ",
+        "symbol": "Nfk",
+        "country": 61,
+        "iso": "ERN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 47,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 62,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 48,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 63,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 49,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 64,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 50,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 66,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 51,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Corona estonia\u200b",
+        "alias": "EEK ",
+        "symbol": "kr",
+        "country": 66,
+        "iso": "EEK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 52,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Birr et\u00edope\u200b",
+        "alias": "ETB ",
+        "symbol": "Br",
+        "country": 67,
+        "iso": "ETB ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 53,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 69,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 54,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 71,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 55,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Central\u200b",
+        "alias": "XAF ",
+        "symbol": "Fr",
+        "country": 72,
+        "iso": "XAF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 56,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Lari georgiano\u200b",
+        "alias": "GEL ",
+        "symbol": "\u10da",
+        "country": 74,
+        "iso": "GEL ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 57,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra brit\u00e1nica",
+        "alias": "GBP ",
+        "symbol": "\u00a3",
+        "country": 74,
+        "iso": "GBP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 58,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Cedi\u200b",
+        "alias": "GHS ",
+        "symbol": "\u20b5",
+        "country": 75,
+        "iso": "GHS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 59,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra gibraltare\u00f1a\u200b",
+        "alias": "GIP ",
+        "symbol": "\u00a3",
+        "country": 76,
+        "iso": "GIP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 60,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 77,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 61,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 78,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 62,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Corona danesa",
+        "alias": "DKK ",
+        "symbol": "kr",
+        "country": 79,
+        "iso": "DKK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 63,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 81,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 64,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Quetzal guatemalteco\u200b",
+        "alias": "GTQ ",
+        "symbol": "Q",
+        "country": 82,
+        "iso": "GTQ ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 65,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra brit\u00e1nican. \u200b",
+        "alias": "GBP ",
+        "symbol": "\u00a3",
+        "country": 84,
+        "iso": "GBP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 66,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco guineano\u200b",
+        "alias": "GNF ",
+        "symbol": "Fr",
+        "country": 85,
+        "iso": "GNF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 67,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Occidental\u200b",
+        "alias": "XOF ",
+        "symbol": "Fr",
+        "country": 85,
+        "iso": "XOF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 68,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Kina\u200b",
+        "alias": "PGK ",
+        "symbol": "K",
+        "country": 85,
+        "iso": "PGK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 69,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Central\u200b",
+        "alias": "XAF ",
+        "symbol": "Fr",
+        "country": 85,
+        "iso": "XAF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 70,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Central\u200b",
+        "alias": "XAF ",
+        "symbol": "Fr",
+        "country": 86,
+        "iso": "XAF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 71,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar guyan\u00e9s\u200b",
+        "alias": "GYD ",
+        "symbol": "$",
+        "country": 88,
+        "iso": "GYD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 72,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Gourde haitiano\u200b",
+        "alias": "HTG ",
+        "symbol": "G",
+        "country": 89,
+        "iso": "HTG ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 73,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Lempira hondure\u00f1o\u200b",
+        "alias": "HNL ",
+        "symbol": "L",
+        "country": 90,
+        "iso": "HNL ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 74,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar de Hong Kong\u200b",
+        "alias": "HKD ",
+        "symbol": "$",
+        "country": 91,
+        "iso": "HKD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 75,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Forinto h\u00fangaro\u200b",
+        "alias": "HUF ",
+        "symbol": "Ft",
+        "country": 92,
+        "iso": "HUF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 76,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia indonesia\u200b",
+        "alias": "IDR ",
+        "symbol": "Rp",
+        "country": 94,
+        "iso": "IDR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 77,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 97,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 78,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra brit\u00e1nican. \u200b",
+        "alias": "GBP ",
+        "symbol": "\u00a3",
+        "country": 99,
+        "iso": "GBP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 79,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Corona islandesa\u200b",
+        "alias": "ISK ",
+        "symbol": "kr",
+        "country": 101,
+        "iso": "ISK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 80,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar neozeland\u00e9s\u200b",
+        "alias": "NZD ",
+        "symbol": "$",
+        "country": 111,
+        "iso": "NZD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 81,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Nuevo sh\u00e9quel\u200b",
+        "alias": "ILS ",
+        "symbol": "\u20aa",
+        "country": 117,
+        "iso": "ILS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 82,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 118,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 83,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar jamaiquino\u200b",
+        "alias": "JMD ",
+        "symbol": "$",
+        "country": 119,
+        "iso": "JMD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 84,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Yen\u200b",
+        "alias": "JPY ",
+        "symbol": "\u00a5",
+        "country": 120,
+        "iso": "JPY ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 85,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra brit\u00e1nican. \u200b",
+        "alias": "GBP ",
+        "symbol": "\u00a3",
+        "country": 121,
+        "iso": "GBP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 86,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar jordano\u200b",
+        "alias": "JOD ",
+        "symbol": "\u062f.\u0627",
+        "country": 122,
+        "iso": "JOD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 87,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Som kirgu\u00eds\u200b",
+        "alias": "KGS ",
+        "symbol": "C",
+        "country": 125,
+        "iso": "KGS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 88,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar australiano\u200b",
+        "alias": "AUD ",
+        "symbol": "$",
+        "country": 126,
+        "iso": "AUD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 89,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar kuwait\u00ed\u200b",
+        "alias": "KWD ",
+        "symbol": "\u062f.\u0643",
+        "country": 127,
+        "iso": "KWD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 90,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 130,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 91,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra libanesa\u200b",
+        "alias": "LBP ",
+        "symbol": "\u0644.\u0644",
+        "country": 131,
+        "iso": "LBP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 92,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar liberiano\u200b",
+        "alias": "LRD ",
+        "symbol": "$",
+        "country": 132,
+        "iso": "LRD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 93,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar libio\u200b",
+        "alias": "LYD ",
+        "symbol": "\u0644.\u062f",
+        "country": 133,
+        "iso": "LYD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 94,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco suizo\u200b",
+        "alias": "CHF ",
+        "symbol": "Fr",
+        "country": 134,
+        "iso": "CHF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 95,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 135,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 96,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 136,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 97,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Pataca macaense\u200b",
+        "alias": "MOP ",
+        "symbol": "P",
+        "country": 137,
+        "iso": "MOP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 98,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Ariary malgache\u200b",
+        "alias": "MGA ",
+        "symbol": "Ar",
+        "country": 139,
+        "iso": "MGA ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 99,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Ringgit malayo\u200b",
+        "alias": "MYR ",
+        "symbol": "RM",
+        "country": 140,
+        "iso": "MYR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 100,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia de Maldivas\u200b",
+        "alias": "MVR ",
+        "symbol": "\u0783.",
+        "country": 142,
+        "iso": "MVR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 101,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Occidental\u200b",
+        "alias": "XOF ",
+        "symbol": "Fr",
+        "country": 143,
+        "iso": "XOF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 102,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 144,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 103,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dirham marroqu\u00ed\u200b",
+        "alias": "MAD ",
+        "symbol": "\u062f.\u0645.",
+        "country": 145,
+        "iso": "MAD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 104,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia de Mauricio\u200b",
+        "alias": "MUR ",
+        "symbol": "\u20a8",
+        "country": 147,
+        "iso": "MUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 105,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Uguiya\u200b",
+        "alias": "MRO ",
+        "symbol": "UM",
+        "country": 148,
+        "iso": "MRO ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 106,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso mexicano\u200b",
+        "alias": "MXN ",
+        "symbol": "$",
+        "country": 150,
+        "iso": "MXN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 107,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 153,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 108,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Tugrik mongol\u200b",
+        "alias": "MNT ",
+        "symbol": "\u20ae",
+        "country": 154,
+        "iso": "MNT ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 109,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 155,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 110,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 156,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 111,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Metical mozambique\u00f1o\u200b",
+        "alias": "MZN ",
+        "symbol": "MTn",
+        "country": 157,
+        "iso": "MZN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 112,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar namibio\u200b",
+        "alias": "NAD ",
+        "symbol": "$",
+        "country": 159,
+        "iso": "NAD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 113,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rand sudafricano\u200b",
+        "alias": "ZAR ",
+        "symbol": "R",
+        "country": 159,
+        "iso": "ZAR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 114,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar australiano\u200b",
+        "alias": "AUD ",
+        "symbol": "$",
+        "country": 160,
+        "iso": "AUD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 115,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia india",
+        "alias": "INR ",
+        "symbol": "\u20b9",
+        "country": 161,
+        "iso": "INR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 116,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia nepal\u00ed\u200b",
+        "alias": "NPR ",
+        "symbol": "\u20a8",
+        "country": 161,
+        "iso": "NPR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 117,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "C\u00f3rdoba nicarag\u00fcense\u200b",
+        "alias": "NIO ",
+        "symbol": "C$",
+        "country": 162,
+        "iso": "NIO ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 118,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Naira\u200b",
+        "alias": "NGN ",
+        "symbol": "\u20a6",
+        "country": 164,
+        "iso": "NGN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 119,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar neozeland\u00e9s\u200b",
+        "alias": "NZD ",
+        "symbol": "$",
+        "country": 165,
+        "iso": "NZD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 120,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Corona noruega\u200b",
+        "alias": "NOK ",
+        "symbol": "kr",
+        "country": 167,
+        "iso": "NOK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 121,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFP\u200b",
+        "alias": "XPF ",
+        "symbol": "Fr",
+        "country": 168,
+        "iso": "XPF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 122,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rial oman\u00ed\u200b",
+        "alias": "OMR ",
+        "symbol": "\u0631.\u0639.",
+        "country": 170,
+        "iso": "OMR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 123,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia pakistan\u00ed\u200b",
+        "alias": "PKR ",
+        "symbol": "\u20a8",
+        "country": 172,
+        "iso": "PKR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 124,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense\u200b",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 175,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 125,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Balboa paname\u00f1o\u200b",
+        "alias": "PAB ",
+        "symbol": "B/.",
+        "country": 175,
+        "iso": "PAB ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 126,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Guaran\u00ed\u200b",
+        "alias": "PYG ",
+        "symbol": "\u20b2",
+        "country": 177,
+        "iso": "PYG ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 127,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Nuevo sol\u200b",
+        "alias": "PEN ",
+        "symbol": "S/.",
+        "country": 178,
+        "iso": "PEN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 128,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFP\u200b",
+        "alias": "XPF ",
+        "symbol": "Fr",
+        "country": 179,
+        "iso": "XPF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 129,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Z\u0142oty\u200b",
+        "alias": "PLN ",
+        "symbol": "z\u0142",
+        "country": 180,
+        "iso": "PLN ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 130,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 181,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 131,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 182,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 132,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar argelino\u200b",
+        "alias": "DZD ",
+        "symbol": "\u062f.\u062c",
+        "country": 184,
+        "iso": "DZD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 133,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dirham marroqu\u00ed\u200b",
+        "alias": "MAD ",
+        "symbol": "\u062f.\u0645.",
+        "country": 184,
+        "iso": "MAD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 134,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Leu rumano\u200b",
+        "alias": "RON ",
+        "symbol": "L",
+        "country": 192,
+        "iso": "RON ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 135,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Tala\u200b",
+        "alias": "WST ",
+        "symbol": "T",
+        "country": 194,
+        "iso": "WST ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 136,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 194,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 137,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar estadounidense",
+        "alias": "USD ",
+        "symbol": "$",
+        "country": 195,
+        "iso": "USD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 138,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Euro\u200b",
+        "alias": "EUR ",
+        "symbol": "\u20ac",
+        "country": 198,
+        "iso": "EUR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 139,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 201,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 140,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar del Caribe Oriental\u200b",
+        "alias": "XCD ",
+        "symbol": "$",
+        "country": 203,
+        "iso": "XCD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 141,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dobra\u200b",
+        "alias": "STD ",
+        "symbol": "Db",
+        "country": 204,
+        "iso": "STD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 142,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Occidental\u200b",
+        "alias": "XOF ",
+        "symbol": "Fr",
+        "country": 205,
+        "iso": "XOF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 143,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar serbio\u200b",
+        "alias": "RSD ",
+        "symbol": "\u0434\u0438\u043d. or din.",
+        "country": 206,
+        "iso": "RSD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 144,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia de Seychelles\u200b",
+        "alias": "SCR ",
+        "symbol": "\u20a8",
+        "country": 207,
+        "iso": "SCR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 145,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar de Brun\u00e9i",
+        "alias": "BND ",
+        "symbol": "$",
+        "country": 209,
+        "iso": "BND ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 146,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar de Singapur\u200b",
+        "alias": "SGD ",
+        "symbol": "$",
+        "country": 209,
+        "iso": "SGD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 147,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Chel\u00edn somal\u00ed\u200b",
+        "alias": "SOS ",
+        "symbol": "Sh",
+        "country": 212,
+        "iso": "SOS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 148,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rupia de Sri Lanka\u200b",
+        "alias": "LKR ",
+        "symbol": "Rs",
+        "country": 213,
+        "iso": "LKR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 149,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rand sudafricano\u200b",
+        "alias": "ZAR ",
+        "symbol": "R",
+        "country": 215,
+        "iso": "ZAR ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 150,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Libra sursudanesa\u200b",
+        "alias": "SSP ",
+        "symbol": "\u00a3",
+        "country": 217,
+        "iso": "SSP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 151,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Corona sueca\u200b",
+        "alias": "SEK ",
+        "symbol": "kr",
+        "country": 218,
+        "iso": "SEK ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 152,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco suizo\u200b",
+        "alias": "CHF ",
+        "symbol": "Fr",
+        "country": 219,
+        "iso": "CHF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 153,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Baht tailand\u00e9s\u200b",
+        "alias": "THB ",
+        "symbol": "\u0e3f",
+        "country": 222,
+        "iso": "THB ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 154,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Somoni tayiko\u200b",
+        "alias": "TJS ",
+        "symbol": "\u0405\u041c",
+        "country": 225,
+        "iso": "TJS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 155,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFA de \u00c1frica Occidental\u200b",
+        "alias": "XOF ",
+        "symbol": "Fr",
+        "country": 229,
+        "iso": "XOF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 156,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Pa\u02bbanga\u200b",
+        "alias": "TOP ",
+        "symbol": "T$",
+        "country": 231,
+        "iso": "TOP ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 157,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Dinar tunecino\u200b",
+        "alias": "TND ",
+        "symbol": "\u062f.\u062a",
+        "country": 233,
+        "iso": "TND ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 158,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Manat turkmeno\u200b",
+        "alias": "TMM ",
+        "symbol": "m",
+        "country": 234,
+        "iso": "TMM ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 159,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Lira turca\u200b",
+        "alias": "TRY ",
+        "symbol": "TL",
+        "country": 235,
+        "iso": "TRY ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 160,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "D\u00f3lar australiano\u200b",
+        "alias": "AUD ",
+        "symbol": "$",
+        "country": 236,
+        "iso": "AUD ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 161,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Grivna\u200b",
+        "alias": "UAH ",
+        "symbol": "\u20b4",
+        "country": 237,
+        "iso": "UAH ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 162,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Chel\u00edn ugand\u00e9s\u200b",
+        "alias": "UGX ",
+        "symbol": "Sh",
+        "country": 238,
+        "iso": "UGX ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 163,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Peso uruguayo\u200b",
+        "alias": "UYU ",
+        "symbol": "$",
+        "country": 239,
+        "iso": "UYU ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 164,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Som uzbeko\u200b",
+        "alias": "UZS ",
+        "symbol": "so\u2019m \u2022 \u0441\u045e\u043c",
+        "country": 240,
+        "iso": "UZS ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 165,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Vatu\u200b",
+        "alias": "VUV ",
+        "symbol": "Vt",
+        "country": 241,
+        "iso": "VUV ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 166,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Franco CFP\u200b",
+        "alias": "XPF ",
+        "symbol": "Fr",
+        "country": 245,
+        "iso": "XPF ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 167,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Rial yemen\u00ed\u200b",
+        "alias": "YER ",
+        "symbol": "\ufdfc",
+        "country": 246,
+        "iso": "YER ",
+        "position": "1"
+    }
+},
+{
+    "model": "base.pycurrency",
+    "pk": 168,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": 1,
+        "name": "Kwacha zambiano\u200b",
+        "alias": "ZMW ",
+        "symbol": "ZK ",
+        "country": 248,
+        "iso": "ZMW ",
+        "position": "1"
+    }
+}
+]

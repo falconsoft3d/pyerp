@@ -1,0 +1,139 @@
+{% extends "base/dashboard.html" %}
+{% load erp_tags %}
+
+{% block content %}
+<div class="row" style="padding:5px;">
+<div class="card card-outline col-12">
+    <div class="card-header">
+        {% for btn in breadcrumbs %}
+        <a title=" {{ _('Back') }}" href="{{ btn.url }}" class="btn btn-light"><i class="fas fa-arrow-left"></i></a>
+        {% endfor %}
+        <a title=" {{ _('Edit') }}" href="{{ update_url }}" class="btn btn-light"><i class="fa fa-pen"></i></a>
+        <button title="{{ _('Delete') }}" onclick="return abrir_modal('{% url delete_url object.pk %}')" type="button" class="btn btn-light"><span class="fa fa-trash"></span></button>
+        <a title="{{ _('Duplicate') }}" href="#" class="btn btn-light"><i class="fa fa-copy"></i></a>
+        {% for btn in breadcrumbs %}
+        <div class="float-right state-bar no_active_bar">
+
+            <style>
+                .active_bar{
+                   font-weight: bold;
+                }
+                .no_active_bar{
+                    color:#777;
+                }
+
+                .btn-manger {
+                   color: {{ user.active_company.font_color }};
+                   background-color: {{ user.active_company.main_color }};
+                }
+            </style>
+            <!--
+                <span class="active_bar">{{ _('Active') }}</span>
+            <i class="fas fa-chevron-right ml-2"></i>
+                <span class="ml-2">{{ _('Archived') }}</span>
+                -->
+            {% if before %}
+                <a title=" {{ _('Before') }}" href="{% url detail_url before.pk %}" class="btn btn-light btn-manger ml-2"> <i class="fas fa-chevron-left"></i></a>
+            {% else %}
+                <a title=" {{ _('Before') }}" href="#" class="btn disabled btn-manger ml-2"> <i class="fas fa-chevron-left"></i></a>
+            {% endif %}
+            {% if next %}
+                <a title=" {{ _('Next') }}" href="{% url detail_url next.pk %}" class="btn btn-light btn-manger"> <i class="fas fa-chevron-right"></i></a>
+            {% else %}
+                <a title=" {{ _('Next') }}" href="#" class="btn disabled btn-manger"> <i class="fas fa-chevron-right"></i></a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+                {% if object.img %}
+                        <img class="img img-responsive" border="1" name="image" src="{{ object.img.url }}" style="width: 90px; height: 90px;">
+                {% endif %}
+            </div>
+            <div class="col-sm-6">
+                <!--{% for btn in breadcrumbs %}
+
+                {% endfor %}-->
+                <form class="form-horizontal" method="post" role="form" action="{% if object.active %} {% url 'base:inactive-object' %} {% else %} {% url 'base:active-object' %} {% endif %}">
+                    {% csrf_token %}
+                    {{ activate_form }}
+                    <button title=" {{ _('Save') }}" type="submit" class="float-right btn btn-light"><i class="fas fa-archive"> {% if object.active %} {{ _('Inactivate') }} {% else %} {{ _('Activate') }} {% endif %} </i></button>
+                </form>
+            </div>
+        </div>
+        <form>
+            <div class="form-row">
+                {% for field in fields %}
+                <div class="form-group col-sm-6">
+                    <div class="row">
+                        <label for="{{field.field}}" class="col-3 col-form-label">{{field.string}}</label>
+                        <div class="col-9">
+                            <input type="text" readonly class="form-control-plaintext" id="{{field.field}}" value="{{ object|get_obj_attr:field.field }}"/>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </form>
+        <div class="row">
+        </div>
+    </div>
+
+
+</div>
+
+
+</div>
+
+<ul class="timeline">
+    <li>
+        <!-- timeline icon -->
+        <i class="fas fa-edit fa-log"></i>
+        <div class="timeline-item">
+            <span class="time"><i class="fa fa-clock-o"></i> <span style="font-size:0.7rem;">{{ object.fm }}</span> </span>
+
+            <h3 class="timeline-header"><a href="#" class="log-a" style="color:#ADB5BD;">Modify</a> ...</h3>
+
+            <div class="timeline-body">
+                <span style="color:#ADB5BD;"><b>User: {{ object.um }}</b> ,</span> Date: {{ object.fm }}
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <!-- timeline icon -->
+        <i class="fas fa-home fa-log"></i>
+        <div class="timeline-item">
+            <span class="time"><i class="fa fa-clock-o"></i> <span style="font-size:0.7rem;">{{ object.fc }}</span> </span>
+
+            <h3 class="timeline-header"><a href="#" class="log-a" style="color:#ADB5BD;">Create</a> ...</h3>
+
+            <div class="timeline-body">
+                <span style="color:#ADB5BD;"><b>User: {{ object.uc }}</b> ,</span>  Date: {{ object.fc }}
+            </div>
+        </div>
+    </li>
+
+</ul>
+
+{% endblock %}
+{% block scripts %}
+<script>
+    $('.btn-danger').click(function (event) {
+        event.preventDefault();
+        if (confirm('{{ _("Are you sure you want to delete the form?") }}')){
+            window.location = $(this)[0].href;
+        }
+    });
+
+    $('.btn-warning').click(function (event) {
+        event.preventDefault();
+        if (confirm('{{ _("Are you sure you want to duplicate the form?") }}')){
+            window.location = $(this)[0].href;
+        }
+    });
+</script>
+{% endblock %}
+

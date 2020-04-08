@@ -1,0 +1,17 @@
+{
+	"name": "Account",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "Accounting",
+	"summary": "Account",
+	"depends": "",
+	"description": "Demo Hello",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-blue",
+	"fa":"fa-hdd",
+	"sequence":"1",
+	"installed":"1"
+
+}

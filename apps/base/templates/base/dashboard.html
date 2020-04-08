@@ -1,0 +1,207 @@
+{% load static %}
+{% load erp_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> {{ user|get_company_name }} | {% if user|get_company_slogan %} {{ user|get_company_slogan }} {% else %} By PyERP {% endif %} </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% block header %}
+    <link rel="shortcut icon" href="{% static '.' %}/dist/favicon.png" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static '/plugins/fontawesome-free/css/all.min.css' %}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}plugins/toastr/toastr.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="{% static '/dist/css/adminlte.min.css' %}">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{% static '/admin/js/vendor/jquery/jquery.js' %}"></script>
+  {% endblock header %}
+  {% block head %}
+  {% endblock %}
+
+  {% block headscripts %}
+    <!-- Admin Libraries -->
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/inlines.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="{% static '/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- FastClick -->
+    <script src="{% static '/plugins/fastclick/fastclick.js' %}"></script>
+    <!-- AdminLTE App -->
+    <script src="{% static '/dist/js/adminlte.min.js' %}"></script>
+    <!-- Toastr -->
+    <script src="{{ STATIC_URL }}plugins/toastr/toastr.min.js"></script>
+  {% endblock headscripts %}
+</head>
+<body class="hold-transition {% if not web_parameter.get_sidebar_collapse == 'True' %} sidebar-collapse {% endif %} sidebar-mini ">
+
+{% if  user.active_company.main_color %}
+<style>
+      .btn-light, state-bar{
+          color: {{ user.active_company.main_color }};
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+          color: {{ user.active_company.font_color }};
+      }
+
+      .navbar-light .navbar-nav .nav-link:hover {
+          color: {{ user.active_company.font_color }};
+      }
+
+    .main-sidebar, .main-header, .main-footer{
+      background-color: {{ user.active_company.main_color }};
+      color: {{ user.active_company.font_color }};
+    }
+
+    .main-sidebar .nav-link, .main-header .nav-link, .main-footer .nav-link{
+      color: {{ user.active_company.font_color }};
+    }
+
+    .main-sidebar .nav-link, .main-header .nav-link, .main-footer .nav-link{
+      color: {{ user.active_company.font_color }};
+    }
+
+    .main-sidebar a, .main-header a, .main-footer a{
+      color: {{ user.active_company.font_color }};
+    }
+
+    .main-sidebar a:hover, .main-header a:hover, .main-footer a:hover{
+      color: {{ user.active_company.font_color }};
+    }
+
+    .content-wrapper {
+      background-color: {{ user.active_company.content_wrapper_color }};
+    }
+
+    [class*=sidebar-light] .user-panel {
+    border-bottom: 1px solid {{ user.active_company.font_color }};
+    }
+
+    [class*=sidebar-light] .brand-link{
+        border-bottom: {{ user.active_company.font_color }};
+    }
+
+    .show>.nav-link {
+       color: {{ user.active_company.font_color }} !important;
+    }
+
+    .fa-log {
+        background: {{ user.active_company.main_color }} !important;
+        color : {{ user.active_company.font_color }};
+    }
+
+    .add-row, .delete-row .fa-trash{
+        color: {{ user.active_company.main_color }} !important;
+        cursor: pointer;
+    }
+
+    .badge-primary {
+        background: {{ user.active_company.main_color }} !important;
+        color : {{ user.active_company.font_color }};
+    }
+    .text-company-color {
+        color : {{ user.active_company.main_color }};
+    }
+
+</style>
+{% endif %}
+
+<!-- Site wrapper -->
+<div class="wrapper">
+  {% include 'base/navbar.html' %}
+  {% include 'base/sidebar.html' %}
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+          {% block content %}{% endblock %}
+      </section>
+      <div id="popup" class="modal fade" role="dialog"></div>
+  </div>
+  <!-- /.content-wrapper -->
+    {% include "base/erp_footer.html" %}
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- Page script -->
+<script>
+    function abrir_modal(url) {
+        $('#popup').load(url, function () {
+            $(this).modal('show');
+        });
+        return false;
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        toastr.options.closeButton = true
+        toastr.options.timeOut = 11000
+        toastr.options.preventDuplicates = true
+        toastr.options.progressBar = true
+        {% if form.errors %}
+            {% for field in form %}
+                {% for error in field.errors %}
+                    toastr.error("{{ error|escape }}")
+                {% endfor %}
+            {% endfor %}
+            {% for error in form.non_field_errors %}
+                toastr.error("{{ error|escape }}")
+            {% endfor %}
+        {% endif %}
+
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.tags == 'debug' %}toastr.info("{{ message }}"){% endif %}
+                {% if message.tags == 'info' %}toastr.info("{{ message }}"){% endif %}
+                {% if message.tags == 'success' %}toastr.success("{{ message }}"){% endif %}
+                {% if message.tags == 'warning' %}toastr.warning("{{ message }}"){% endif %}
+                {% if message.tags == 'error' %}toastr.error("{{ message }}"){% endif %}
+            {% endfor %}
+        {% endif %}
+    });
+</script>
+{% block scripts %}
+{% endblock scripts %}
+
+
+<!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ _('Exit') }}</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">{{ _('Select close if you want to leave the assignment.?') }}</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">{{ _('Cancel') }}</button>
+          <a class="btn btn-primary" href="{% url 'PyUser:logout' %}">{{ _('Close') }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

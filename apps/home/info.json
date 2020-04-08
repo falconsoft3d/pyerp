@@ -1,0 +1,16 @@
+{
+	"name": "Home",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "Home Website",
+	"summary": "Home Website",
+	"depends": "",
+	"description": "Demo Hello",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-gray",
+	"fa":"fa fa-info",
+	"sequence":"10",
+	"installed":"0"
+}

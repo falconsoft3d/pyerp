@@ -1,0 +1,91 @@
+{% extends "base/dashboard.html" %}
+{% block content %}
+            <div class="container-fluid">
+                <div class="row">
+                    {% for bi in bi %}
+                    <div class="col-lg-3 col-6 mt-2">
+                        <div class="small-box" style="background-color:{{ bi.color }}; color:{{ bi.font_color }};">
+                            <div class="inner">
+                                <h3>{{ bi.id }}</h3>
+                                <p>{{ bi.name }}</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa {{ bi.icon }}"></i>
+                            </div>
+                            <a href="{% url 'PyPartner:list' %}" class="small-box-footer">{{ _('More Informations') }} <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!--
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-success">
+                            <div class="inner">
+                                <h3>{{ providers.count }}</h3>
+                                <p>{{ _('Providers') }}</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="{% url 'base:provider' %}" class="small-box-footer">{{ _('More Informations') }} <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-warning">
+                            <div class="inner">
+                                <h3>{{ users.count }}</h3>
+                                <p>{{ _('Users') }}</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="{% url 'PyUser:list' %}" class="small-box-footer">{{ _('More Informations') }} <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-danger">
+                            <div class="inner">
+                                <h3>{{ products.count }}</h3>
+                                <p>{{ _('Products') }}</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <a href="{% url 'PyProduct:list' %}" class="small-box-footer">{{ _('More Informations') }} <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    -->
+                  </div>
+            </div>
+{% endblock content %}
+{% block javascripts %}
+    <!-- page script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            toastr.options.closeButton = true
+            toastr.options.timeOut = 11000
+            toastr.options.preventDuplicates = true
+            toastr.options.progressBar = true
+
+            {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        toastr.error("{{ error|escape }}")
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    toastr.error("{{ error|escape }}")
+                {% endfor %}
+            {% endif %}
+
+            {% if messages %}
+                {% for message in messages %}
+                    {% if message.tags == 'debug' %}toastr.info("{{ message }}"){% endif %}
+                    {% if message.tags == 'info' %}toastr.info("{{ message }}"){% endif %}
+                    {% if message.tags == 'success' %}toastr.success("{{ message }}"){% endif %}
+                    {% if message.tags == 'warning' %}toastr.warning("{{ message }}"){% endif %}
+                    {% if message.tags == 'error' %}toastr.error("{{ message }}"){% endif %}
+                {% endfor %}
+            {% endif %}
+        });
+    </script>
+{% endblock javascripts %}

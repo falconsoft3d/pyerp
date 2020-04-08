@@ -1,0 +1,140 @@
+{% extends "base/dashboard.html" %}
+{% load humanize %}
+{% load bootstrap4 %}
+
+{% bootstrap_css %}
+{% bootstrap_messages %}
+
+{% load static %}
+{% load erp_tags %}
+{% block header %}
+    <link rel="shortcut icon" href="{% static '.' %}/dist/favicon.png" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static '/plugins/fontawesome-free/css/all.min.css' %}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}plugins/toastr/toastr.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="{% static '/dist/css/adminlte.min.css' %}">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    {{ form.media }}
+{% endblock header %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/formset.css' %}">
+{% endblock %}
+{% block content %}
+<div class="row" style="padding:5px;" >
+  <div class="card card-outline col-12">
+    <form method="post" class="form">
+      {% csrf_token %}
+      {% for hidden in form.hidden_fields %}
+        {{ hidden }}
+      {% endfor %}
+      <div class="card-header">
+        {% include 'base/header_botons.html' %}
+      </div>
+      <div class="card-body">
+        <div class="form-row">
+          {% if object %}
+            <div class="form-group row col-sm-6">
+              <label class="col-sm-2 col-xl-2 col-form-label" for="id_name">Name</label>
+              <div class="col-sm-9">
+                <input type="text" value="{{ object.name }}" class="form-control"  style="width: 100%"  maxlength="80" disabled >
+                <span class="help-block">
+                </span>
+              </div>
+            </div>
+          {% else %}
+            <div class="form-group row col-sm-6">
+              <label class="col-sm-2 col-xl-2 col-form-label" for="id_name">Name</label>
+              <div class="col-sm-9">
+                <input type="text" value="{{ _('New') }}" class="form-control"  style="width: 100%"  maxlength="80" disabled >
+                <span class="help-block">
+                </span>
+              </div>
+            </div>
+          {% endif %}
+          {% for field in form.visible_fields %}
+            {% if field.auto_id != "id_note" %}
+              <div class="form-group row col-sm-6">
+                <label class="col-sm-2 col-xl-2 col-form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                <div class="col-sm-9">
+                  {{ field }}
+                  <span class="help-block">
+                    {% for error in field.errors %}
+                      <ul>
+                        <li class="text-red">{{ error }}</li>
+                      </ul>
+                    {% endfor %}
+                  </span>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div>
+          {{ formset.management_form }}
+          <fieldset>
+            <table id="formset_table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="original"></th>
+                  {% for field in formset.form %}
+                    {% if not field.widget.is_hidden %}
+                      <th class="column-{{ field.name }}">{{ field.label|capfirst }}</th>
+                    {% endif %}
+                  {% endfor %}
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for inline_form in formset %}
+                  <tr class="{% cycle 'row1' 'row2' %}" id="{{ formset.prefix }}-{{ forloop.counter0 }}">
+                    <td class="original{%if field.errors %} table-danger{% endif %}">
+                      {% for hidden in inline_form.hidden_fields %}
+                        {{ hidden }}
+                      {% endfor %}
+                    </td>
+                    {% for field in inline_form.visible_fields %}
+                      <td class="{% if field.name %}field-{{ field.name }}{% endif %}{%if field.errors %} table-danger{% endif %}">
+                          {{ field }}
+                      </td>
+                    {% endfor %}
+                    <td id="{{ formset.prefix }}-DELETE-{{ forloop.counter0 }}" class="field-DELETE"><span class="delete-row"><li class="fa fa-trash" style="padding-right: 3px;"></li></span></td>
+                  </tr>
+                {% endfor %}
+                <tr class="formset-template" id="{{ formset.prefix }}-__prefix__" style="display: none">
+                  <td class="original {%if field.errors %}table-danger{% endif %}">
+                    {% for hidden in formset.empty_form.hidden_fields %}
+                      {{ hidden }}
+                    {% endfor %}
+                  </td>
+                  {% for field in formset.empty_form.visible_fields %}
+                    <td class="{% if field.name %}field-{{ field.name }}{% endif %} {%if field.errors %}table-danger{% endif %}">
+                        {{ field }}
+                    </td>
+                  {% endfor %}
+                  <td id="{{ formset.prefix }}-DELETE-__prefix__" class="field-DELETE"><span class="delete-row"><li class="fa fa-trash" style="padding-right: 3px;"></li></span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+          </fieldset>
+          <span id="add-row" class="add-row">{{ _('Add new line') }}</span>
+        </div>
+      </div>
+      <!-- /.card-body -->
+      <div id="detail-footer" class="card-footer">
+        {% include 'base/footer_total.html' %}
+      </div>
+      <!-- /.card-footer -->
+    </form>
+  </div>
+  <!-- /.card -->
+</div>
+{% endblock %}

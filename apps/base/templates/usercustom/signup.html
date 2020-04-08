@@ -1,0 +1,156 @@
+{% load erp_tags %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ settings.APP_NAME }} | {{ _('Sign up') }}</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="{{ MEDIA_URL }}favicon.png" type="image/x-icon"/>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}plugins/fontawesome-free/css/all.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Toastr -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}plugins/toastr/toastr.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!-- Google Recaptcha -->
+        <script src='https://www.google.com/recaptcha/api.js?hl={{ LANGUAGE_CODE }}'></script>
+        <!-- PyErp CSS -->
+
+        <style>
+            .toast {
+                opacity: 1 !important;
+            }
+
+            #toast-container > div {
+                opacity: 1 !important;
+            }
+        </style>
+    </head>
+    <body class="hold-transition django-font-w login-page">
+        <div class="login-box" style="margin: 3% auto;">
+            <div class="login-logo">
+                 <a href="/">
+                    <img src="{{ MEDIA_URL }}{{ user|get_company_logo }}" alt="PyERP" style="opacity: .8; margin-left: 12px;" height="80px">
+                 </a>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex p-0">
+                    <ul class="nav nav-pills ml-auto p-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-globe"></i>&nbsp;{{ _('Language') }}</a>
+                            <div class="dropdown-menu">
+                                {% for language_code, language in LANGUAGES %}
+                                    {% if LANGUAGE_CODE != language_code %}
+                                        <a class="dropdown-item" tabindex="-1"  href="{% url 'activate_language' language_code %}"><img src="{{ MEDIA_URL }}flag/{{ language_code }}.png" data-toggle="tooltip" title="{{ _('Change to') }} {{ language }}" height="20" width="20" class="user-image" alt="{{ _('Change to') }} {{ language }} | ">&nbsp;{{ language }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.card-header -->
+                <div class="card-body login-card-body">
+                    <p class="login-box-msg">{{ _('Sign up') }}</p>
+                    <form method="POST">
+                        {% csrf_token %}
+                        {% for hidden in form.hidden_fields %}
+                            {{ hidden }}
+                        {% endfor %}
+                        {% for field in form.visible_fields %}
+                            {% if 'password' not in field.name %}
+                                <div class="input-group mb-3">
+                                    {{ field }}
+                                    {% if 'name' in field.name %}
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-envelope"></span></div>
+                                        </div>
+                                    {% elif  'mail' in field.name %}
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-envelope"></span></div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        <div class="input-group mb-3">
+                            <input type="password" name="password1" class="form-control django-font-g" required id="id_password1" placeholder="{{ _('Password') }}">
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-lock"></span></div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" name="password2" class="form-control django-font-g" required id="id_password2" placeholder="{{ _('Retype password') }}">
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-lock"></span></div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="col">
+                                <div class="g-recaptcha" data-sitekey="6LevF1gUAAAAAJQUmUwnDAaO8sv73qI4-8_M9RAM"></div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-block btn btn-primary">{{ _('Sign up') }}</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="/">{{ _('Back') }}</a>&nbsp;|&nbsp;
+                            <a href="{% url 'base:password-recovery' %}">{{ _('Password recovery') }}</a>&nbsp;|&nbsp;
+                            <a href="{% url 'base:login' %}">{{ _('Login') }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="{{ STATIC_URL }}plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="{{ STATIC_URL }}plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Toastr -->
+        <script src="{{ STATIC_URL }}plugins/toastr/toastr.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="{{ STATIC_URL }}dist/js/adminlte.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                toastr.options.closeButton = true
+                toastr.options.timeOut = 11000
+                toastr.options.preventDuplicates = true
+                toastr.options.progressBar = true
+
+                {% if form.errors %}
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            toastr.error("{{ error|escape }}")
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        toastr.error("{{ error|escape }}")
+                    {% endfor %}
+                {% endif %}
+
+                {% if reCAPTCHA_error %}
+                    toastr.error("{{ reCAPTCHA_error|escape }}")
+                {% endif %}
+
+                {% if messages %}
+                    {% for message in messages %}
+                        {% if message.tags == 'debug' %}toastr.info("{{ message }}"){% endif %}
+                        {% if message.tags == 'info' %}toastr.info("{{ message }}"){% endif %}
+                        {% if message.tags == 'success' %}toastr.success("{{ message }}"){% endif %}
+                        {% if message.tags == 'warning' %}toastr.warning("{{ message }}"){% endif %}
+                        {% if message.tags == 'error' %}toastr.error("{{ message }}"){% endif %}
+                    {% endfor %}
+                {% endif %}
+            });
+        </script>
+
+    </body>
+</html>

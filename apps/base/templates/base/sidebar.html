@@ -1,0 +1,446 @@
+{% load erp_tags %}
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-light elevation-1">
+    <!-- Brand Logo -->
+    {% if user.is_superuser %}
+    <a href="{% url 'PyCompany:list' %}" class="brand-link">
+    {% else %}
+            <a href="/" class="brand-link">
+    {% endif %}
+        <img src="{{ MEDIA_URL }}{{ user.active_company.logo }}" alt="PyERP" class="logo_company" style="opacity: .8; margin-left: 0px;" width="100%" >
+    </a>
+
+    <style>
+        .logo_company:hover {filter: grayscale(80%);}
+    </style>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                <li class="nav-item has-treeview">
+                    <a href="{% url 'base:home' %}" class="nav-link"><i class="fa fa-home nav-icon"></i><p>{{ _('Home') }}</p></a>
+                </li>
+
+        {% if web_parameter.show_email == 'True' %}
+        <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-envelope-open-text nav-icon"></i>
+                  <p>
+                    {{ _('Email') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyEmail:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Inbox') }}</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url 'PyEmail:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Sent') }}</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+        {% endif %}
+
+
+        {% if web_parameter.show_email == 'True' %}
+                <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="far fa-comment-alt nav-icon"></i>
+                  <p>
+                    {{ _('Messages') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyMessage:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Message') }}</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+         {% endif %}
+
+        {% if web_parameter.show_calendar == 'True' %}
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-calendar-week nav-icon"></i>
+                  <p>
+                    {{ _('Calendar') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyEvent:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Event') }}</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+        {% endif %}
+
+         {% if web_parameter.show_note == 'True' %}
+               <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-sticky-note nav-icon"></i>
+                  <p>
+                    {{ _('Notes') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyNote:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Notes') }}</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+            {% endif %}
+
+
+
+       <!-- PARTNER -->
+        <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-user nav-icon"></i>
+                  <p>
+                    {{ _('Partners') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyPartner:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Partners') }}</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url 'PyChannel:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Channels') }}</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+         <!-- END PARTNER -->
+
+
+
+
+
+
+        <!-- PRODUCT -->
+        <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-barcode nav-icon"></i>
+                  <p>
+                    {{ _('Products') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="{% url 'PyProduct:list' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>{{ _('Products') }}</p>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="{% url 'PyVariant:list' %}" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>{{ _('Variants') }}</p>
+                      </a>
+                    </li>
+
+                     <li class="nav-item">
+                        <a href="{% url 'PyAttribute:list' %}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{ _('Attributes') }}</p></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'PyProductCategory:list' %}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{ _('Category') }}</p></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'PyProductCategoryUOM:list' %}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{ _('Category UOM') }}</p></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'PyUom:list' %}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{ _('Unit of Measurement') }}</p></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'PyProductBrand:list' %}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{ _('Brand') }}</p></a>
+                    </li>
+
+
+
+
+                </ul>
+              </li>
+            <!-- END PRODUCT -->
+
+        {% if web_parameter.show_location == 'True' %}
+        <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-building nav-icon"></i>
+                  <p>
+                    {{ _('Location') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                       <a href="{% url 'PyCountry:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Countries') }}</p></a>
+                   </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'PyCurrency:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Currencies') }}</p></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'PyTax:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Taxs') }}</p></a>
+                    </li>
+                </ul>
+              </li>
+            {% endif %}
+
+
+
+         <!-- WEBSITE -->
+        <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-cloud nav-icon"></i>
+                  <p>
+                    {{ _('Website') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyPost:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Posts') }}</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{% url 'PyPage:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Pages') }}</p>
+                    </a>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a href="{% url 'PyComment:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Comments') }}</p>
+                    </a>
+                  </li>
+
+                   <li class="nav-item">
+                    <a href="{% url 'PyProductWebCategory:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Web Categorys') }}</p>
+                    </a>
+                  </li>
+
+                   <li class="nav-item">
+                    <a href="{% url 'PyWParameter:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Web Parameters') }}</p>
+                    </a>
+                  </li>
+
+                    <li class="nav-item">
+                    <a href="{% url 'PyMeta:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Metas') }}</p>
+                    </a>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a href="{% url 'PyWPayment:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Web Payments') }}</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{% url 'PyFaq:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Faqs') }}</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{% url 'PyImage:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Images') }}</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{% url 'PyTag:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Tags') }}</p>
+                    </a>
+                  </li>
+
+                   <li class="nav-item">
+                    <a href="{% url 'PyMenu:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Menus') }}</p>
+                    </a>
+                  </li>
+
+                    <li class="nav-item">
+                        <a href="{% url 'base:website-config' 1 %}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>{{ _('Web Configurations') }}</p>
+                        </a>
+                    </li>
+
+                </ul>
+              </li>
+              <!-- END WEBSITE -->
+
+
+             {% if web_parameter.show_bi == 'True' %}
+             <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-brain nav-icon"></i>
+                  <p>
+                    {{ _('Business Intelligence') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyBi:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Business Intelligence') }}</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              {% endif %}
+
+                {% for app in app_list|get_app_list %}
+                    {% include app %}
+                {% endfor %}
+                <!-- Apps End -->
+                {% if user.is_superuser %}
+                    <!-- Configuracion Begin Sección solo para los administrdores -->
+                    <!-- Apps Begin -->
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link"><i class="fa fa-microchip nav-icon"></i><p>{{ _('Plugins') }} <i class="fas fa-angle-left right"></i></p></a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{% url 'PyPlugin:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Plugins') }}</p></a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="{% url 'PyPlugin:update' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Update') }}</p></a>
+                            </li>
+                        </ul>
+                    </li>
+
+             {% if web_parameter.show_file == 'True' %}
+             <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-paperclip nav-icon" ></i>
+                  <p>
+                    {{ _('Files') }}
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'PyFile:list' %}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>{{ _('Files') }}</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              {% endif %}
+
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link"><i class="fa fa-cogs nav-icon"></i><p>{{ _('Configuration') }}<i class="fas fa-angle-left right"></i></p></a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{% url 'PyUser:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Users') }}</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'PyCompany:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Company') }}</p></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{% url 'base:base-config' 1 %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('General') }}</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'PyLog:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Log') }}</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'PyCron:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Cron') }}</p></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{% url 'PySequence:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Sequence') }}</p></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{% url 'PyParameter:list' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Parameters') }}</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'base:load-data' %}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>{{ _('Load Data') }}</p></a>
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>

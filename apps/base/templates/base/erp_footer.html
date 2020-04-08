@@ -1,0 +1,9 @@
+<footer class="main-footer">
+    {% if  web_parameter.show_footer == 'True' %}
+        <div class="float-right d-none d-sm-block">
+          <b>{{ _('Version') }}</b> 1.00
+        </div>
+        <strong>Copyright &copy; 2019 <a class="mylink" target="_blank" href="http://pyerp.cl">PyERP</a>.</strong> All rights
+        reserved. {{ _('Source Code') }}:  <strong><a target="_blank" class="mylink" href="https://github.com/falconsoft3d/pyerp">github.com/falconsoft3d/pyerp</a></strong>
+    {% endif %}
+</footer>

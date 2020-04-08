@@ -1,0 +1,73 @@
+{% extends "base/dashboard.html" %}
+{% load humanize %}
+{% load erp_tags %}
+
+{% block head %}
+<style>
+  .list-inline-item:not(:last-child) {
+    margin-right: .0rem;
+  }
+  .breadcrumb {
+    padding: .75rem 1rem .75rem 0rem;
+    background-color: Transparent;
+  }
+  .card-header {
+    border-bottom: none;
+  }
+  .breadcrumb-item a {
+    color: #563D7C;
+    font-weight: bold;
+  }
+  .table {
+    -moz-appearance: textfield;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-size: 90%;
+    height: calc(1.81245rem + 2px);
+  }
+</style>
+{% endblock %}
+{% block content %}
+<div class="row" style="padding:5px;">
+  <div class="card card-outline col-12">
+    <div class="card-header">
+      {% include 'base/header_botons.html' %}
+    </div>
+    <div class="card-body">
+      {% include 'base/detail_body.html' %}
+    </div>
+    <div class="card-footer">
+      {% include 'base/footer_total.html' %}
+      <hr class="style1">
+      <div class="row">
+        <div class="form-group row col-sm-12">
+          <label class="col-1 col-form-label" >{{ _('Note') }}</label>
+          <div class="col-11">
+            {{ object.note}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.card-footer -->
+  </div>
+</div>
+{% include 'base/time_line.html' %}
+{% endblock %}
+{% block scripts %}
+<script>
+  $('.btn-danger').click(function (event) {
+    event.preventDefault();
+    if (confirm('{{ _("Are you sure you want to delete the form?") }}')){
+      window.location = $(this)[0].href;
+    }
+  });
+
+  $('.btn-warning').click(function (event) {
+    event.preventDefault();
+    if (confirm('{{ _("Are you sure you want to duplicate the form?") }}')){
+      window.location = $(this)[0].href;
+    }
+  });
+</script>
+{% endblock %}
+

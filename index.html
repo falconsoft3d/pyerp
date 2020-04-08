@@ -1,0 +1,31 @@
+<script src="socket.io.slim.js"></script>
+<script src="apps/erp/static/plugins/jquery/jquery.min.js"></script>
+<h1>Hola</h1>
+<form action="post">
+    <input type="text" name="texto"/>
+    <input type="button" value="Enviar">
+</form>
+<ul id="rsp">
+</ul>
+<script>
+    $(document).ready(function () {
+        var socket = io('http://localhost:5000');
+        $('form').submit(function (event) {
+            event.preventDefault();
+            var valor = $('input[name="texto"]').val();
+            socket.emit('chat', valor);
+            $('input[name="texto"]').val('');
+            $
+        });
+        var connect = setInterval(function () {
+            if (socket.id) {
+                socket.on('chat-' + socket.id, function (msg) {
+                    console.warn(msg);
+                    $('#rsp').append(`<li>${msg}</li>`);
+                });
+                clearInterval(connect);
+            }
+        }, 1000);
+        console.log(socket);
+    });
+</script>

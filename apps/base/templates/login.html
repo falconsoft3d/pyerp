@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PyERP | {{ _("ERP in Django") }}</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{% static '.' %}/dist/favicon.png" type="image/x-icon"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static '/plugins/fontawesome-free/css/all.min.css' %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="{% static '/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+
+  <link rel="stylesheet" href="{% static '/dist/jquery-confirm/jquery-confirm.min.css' %}">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static '/dist/css/adminlte.min.css' %}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition django-font-w login-page">
+<div class="login-box">
+    <div class="login-logo">
+
+      <img src="{% static 'dist/favicon.png' %}"
+           alt="PyERP"
+           style="opacity: .8; margin-left: 12px;" height="30px" >
+
+      <a href="{% url 'base:home_easy' %}" style="color:#fff;"><b>Py</b>ERP</a>
+
+    </div>
+
+  <!-- /.login-logo -->
+  <div class="card">
+
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">{{ _("Log in") }}</p>
+
+      <form method="POST">
+        {% csrf_token %}
+
+        <div class="text-danger">
+
+      </div>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control django-font-g" name="username"  id="id_username" placeholder="{{ _('User name') }}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" name="password" class="form-control django-font-g"  id="password" placeholder="{{ _('Password') }}">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <a href="/">{{ _('Home') }}</a>
+          </div>
+          <div class="col-4">
+            <button type="submit"  class="btn btn-block btn-flat">{{ _('Login') }}</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+<!-- jQuery -->
+<script src="{% static '/plugins/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap 4 -->
+<script src="{% static '/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<script src="{% static '/dist/jquery-confirm/jquery-confirm.min.js' %}"></script>
+
+<script>
+function mensaje(msg,color='green'){
+ $.alert({
+    title:'',
+    theme: 'material',
+    type: color,
+    content:msg
+ });
+}
+</script>
+
+<script>
+{% if form.errors  %}
+    {% for field in form %}
+       {% if field.errors %}
+          {% for error in field.errors %}
+          mensaje('{{ error|escape }}','red');
+          {% endfor %}
+       {% endif %}
+{% endfor %}
+
+{% if form.non_field_errors  %}
+          {% for error in form.non_field_errors %}
+             mensaje('{{ error|escape }}','red');
+          {% endfor %}
+    {% endif %}
+{% endif %}
+</script>
+
+</body>
+</html>

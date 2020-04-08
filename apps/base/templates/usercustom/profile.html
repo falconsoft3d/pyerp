@@ -1,0 +1,261 @@
+{% extends "base/dashboard.html" %}
+{% block head %}
+    <!-- Cropper JS -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/cropper.css">
+    <!-- Tempus Dominus -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+    <style>
+      .label {
+        cursor: pointer;
+        padding: 0px;
+      }
+
+      .progress {
+        display: none;
+        margin-bottom: 1rem;
+      }
+
+      .img-container img {
+        max-width: 100%;
+      }
+    </style>
+{% endblock %}
+
+{% block content %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 mt-2">
+                        <!-- Profile Image -->
+                        <div class="card card-primary card-outline">
+                            <div class="card-body box-profile">
+                                <div class="text-center">
+                                    <label class="label" data-toggle="tooltip" title="Change your avatar">
+                                        <img class="profile-user-img img-fluid img-circle" id="avatar_img" src="{{ request.user.avatar.url }}" alt="{{ request.user }}">
+                                        <form method="post" enctype="multipart/form-data" action="{% url 'PyUser:avatar' %}" id="formUpload">
+                                            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                                            <input type="file" class="sr-only" id="id_avatar" name="avatar" accept="image/*">
+                                        </form>
+                                    </label>
+                                </div>
+                                <h3 class="profile-username text-center">{{ user }}</h3>
+                                <a href="{% url 'PyUser:change-password'  %}" class="btn btn-primary btn-block"><b>{{ _('Change Password') }}</b></a>
+                            </div><!-- /.card-body -->
+                        </div><!-- /.card -->
+                    </div><!-- /.col -->
+                    <div class="col-md-9 mt-2">
+                        <!-- Profile Image -->
+                        <div class="card card-primary card-outline">
+                            <div class="card-body">
+                                <form class="form-horizontal" action="{% url 'PyUser:profile' %}" method="post" role="form">
+                                    {% csrf_token %}
+                                    {% for hidden in form.hidden_fields %}
+                                        {{ hidden }}
+                                    {% endfor %}
+                                    {% for field in form.visible_fields %}
+                                        {% if forloop.counter0|divisibleby:"2" or forloop.counter0 == 0 %}
+                                            <div class="row">
+                                        {%endif%}
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="id_first_name">{{ field.label }}</label>
+                                                {{ field }}
+                                            </div>
+                                        <!-- /.col -->
+                                        </div>
+                                        {% if forloop.counter|divisibleby:"2" %}
+                                            </div>
+                                            <!-- /.row -->
+                                        {% elif forloop.last %}
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                    </div>
+                                                <!-- /.col -->
+                                                </div>
+                                            </div>
+                                            <!-- /.row -->
+                                        {%endif%}
+                                    {% endfor %}
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-danger float-right">{{ _('Save') }}</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!-- /.card-body -->
+                        </div><!-- /.card -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel">{{ _('Crop the image') }}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="img-container"><img id="image" src="{{ request.user.avatar.url }}"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ _('Cancel') }}</button>
+                            <button type="button" class="btn btn-primary" id="crop">{{ _('Crop') }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal -->
+{% endblock content %}
+{% block scripts %}
+    <!-- cropper 4.0.0 -->
+    <script src="{{ STATIC_URL }}js/cropper.js"></script>
+    <!-- page script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            toastr.options.closeButton = true
+            toastr.options.timeOut = 11000
+            toastr.options.preventDuplicates = true
+            toastr.options.progressBar = true
+
+            {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        toastr.error("{{ error|escape }}")
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    toastr.error("{{ error|escape }}")
+                {% endfor %}
+            {% endif %}
+
+            {% if next %}
+                {% if request.user.is_authenticated %}
+                    toastr.warning("{{ _('Your account does not have the necessary privileges to access this section. To continue, log in with an account that has the necessary privileges.') }}")
+                {% else %}
+                    toastr.info("{{ _('Please login to visit this page.') }}")
+                {% endif %}
+            {% endif %}
+
+            {% if messages %}
+                {% for message in messages %}
+                    {% if message.tags == 'debug' %}toastr.info("{{ message }}"){% endif %}
+                    {% if message.tags == 'info' %}toastr.info("{{ message }}"){% endif %}
+                    {% if message.tags == 'success' %}toastr.success("{{ message }}"){% endif %}
+                    {% if message.tags == 'warning' %}toastr.warning("{{ message }}"){% endif %}
+                    {% if message.tags == 'error' %}toastr.error("{{ message }}"){% endif %}
+                {% endfor %}
+            {% endif %}
+        });
+
+        // Script para cortar el avatar con crop.js
+        window.addEventListener('DOMContentLoaded', function () {
+            var avatar = document.getElementById('avatar_img');
+            var user_avatar = document.getElementById('user_avatar');
+            var image = document.getElementById('image');
+            var input = document.getElementById('id_avatar');
+            var $progress = $('.progress');
+            var $progressBar = $('.progress-bar');
+            var $alert = $('.alert');
+            var $modal = $('#modal');
+            var cropper;
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+            input.addEventListener('change', function (e) {
+                var files = e.target.files;
+                var done = function (url) {
+                    input.value = '';
+                    image.src = url;
+                    $alert.hide();
+                    $modal.modal('show');
+                };
+                var reader;
+                var file;
+                var url;
+
+                if (files && files.length > 0) {
+                    file = files[0];
+
+                    if (URL) {
+                        done(URL.createObjectURL(file));
+                    } else if (FileReader) {
+                        reader = new FileReader();
+                        reader.onload = function (e) {
+                            done(reader.result);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                }
+            });
+
+            $modal.on('shown.bs.modal', function () {
+                cropper = new Cropper(image, {
+                    aspectRatio: 1,
+                    viewMode: 3,
+                });
+            }).on('hidden.bs.modal', function () {
+                cropper.destroy();
+                cropper = null;
+            });
+
+            document.getElementById('crop').addEventListener('click', function () {
+                var initialAvatarURL;
+                var canvas;
+
+                $modal.modal('hide');
+
+                if (cropper) {
+                    canvas = cropper.getCroppedCanvas({width: 160, height: 160,});
+                    initialAvatarURL = avatar.src;
+                    avatar.src = canvas.toDataURL(); //Altero el avatar del perfil
+                    user_avatar.src = canvas.toDataURL(); //Altero el avatar de la barra superior
+                    $progress.show();
+                    $alert.removeClass('alert-success alert-warning');
+                    canvas.toBlob(function (blob) {
+                        var formData = new FormData();
+
+                        formData.append('avatar', blob, 'avatar.jpg');
+                        $.ajax('{% url 'PyUser:avatar' %}', {
+                            method: 'POST',
+                            headers:{"X-CSRFToken": csrftoken},
+                            data: formData,
+                            processData: false,
+                            contentType: false,
+
+                            xhr: function () {
+                                var xhr = new XMLHttpRequest();
+
+                                xhr.upload.onprogress = function (e) {
+                                    var percent = '0';
+                                    var percentage = '0%';
+
+                                    if (e.lengthComputable) {
+                                        percent = Math.round((e.loaded / e.total) * 100);
+                                        percentage = percent + '%';
+                                        $progressBar.width(percentage).attr('aria-valuenow', percent).text(percentage);
+                                    }
+                                };
+
+                                return xhr;
+                            },
+
+                            success: function () {
+                            },
+
+                            error: function () {
+                                avatar.src = initialAvatarURL;
+                            },
+
+                            complete: function () {
+                              $progress.hide();
+                            },
+                        });
+                        return false;
+                    });
+                }
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,22 @@
+id,name,value
+1,main_color,#44b78b
+2,font_color,#C9F0DD
+2,font_color_strong,#0C4B33
+3,title_home,We have worked 39 days of this ERP 10%
+4,title_home_link,t.me/pyerp
+7,show_footer,True
+8,show_bar_company,True
+9,show_bar_language,False
+10,show_online_company,True
+11,show_btn_export,True
+12,show_btn_import,True
+13,show_btn_mass,True
+14,custome_title,PyERP
+15,show_email,False
+16,show_message,False
+17,show_calendar,False
+18,show_note,False
+19,show_bi,False
+20,show_file,False
+21,show_location,False
+22,get_sidebar_collapse,True

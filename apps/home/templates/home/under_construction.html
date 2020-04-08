@@ -1,0 +1,24 @@
+{% load static %}
+{% load erp_tags %}
+<!doctype html>
+{% if not user|web_under_construction %}
+     <meta http-equiv="Refresh" content="0; url={% url 'base:home-index' %}">
+{% endif %}
+
+<title> {{ user|get_company_name }} | {{ user|get_company_slogan }} </title>
+<style>
+  body { text-align: center; padding: 150px; }
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+</style>
+
+<article>
+    <h1>Página en Construcción!</h1>
+    <div>
+        <p>Disculpe estamos en mantenimiento de nuestra Web si necesitas contactarnos lo puede hacer a <a href="mailto:hello@pyerp.cl">hello@pyerp.cl</a>, estaremos pronto de vuelta.</p>
+        <p>&mdash; Equipo <b>PyERP</b></p>
+    </div>
+</article>

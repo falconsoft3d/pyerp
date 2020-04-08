@@ -1,0 +1,17 @@
+{
+	"name": "Academy",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "base",
+	"summary": "Academy",
+	"depends": "",
+	"description": "Sell online courses",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-purple",
+	"fa":"fa-book",
+	"sequence":"6",
+	"installed":"0"
+
+}

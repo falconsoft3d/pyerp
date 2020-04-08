@@ -1,0 +1,114 @@
+{% load erp_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    {% block meta %}{{ meta|safe }}{% endblock %}
+    <title> {{ user|get_company_name }} | {% if user|get_company_slogan %} {{ user|get_company_slogan }} {% else %} By PyERP {% endif %} </title>
+    <!-- Bootstrap core CSS -->
+    <link href="{{ STATIC_URL }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="{{ STATIC_URL }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}./dist/favicon.png" type="image/x-icon"/>
+    <!-- Custom styles for this template -->
+    <link href="{{ STATIC_URL }}css/agency.css" rel="stylesheet">
+    {% if user|web_under_construction %}
+      <meta http-equiv="Refresh" content="0; url={% url 'home:under-construction' %}">
+    {% endif %}
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+
+  <style>
+    body{
+       color: {{ web_parameter.font_color }};
+    }
+
+    header.masthead {
+      color: {{ web_parameter.font_color }};
+      background-color: {{ web_parameter.main_color }};
+    }
+
+    a{
+       color: {{ web_parameter.font_color }};
+     }
+
+    a:hover{
+       color: {{ web_parameter.font_color_strong }};
+     }
+
+     .nav-link{
+       color: {{ web_parameter.font_color }};
+     }
+
+     #mainNav.navbar-shrink {
+     background-color: {{ web_parameter.main_color }};
+        }
+
+    section#contact,
+    section#team,
+    section#portfolio  {
+        background-color: {{ web_parameter.main_color }};
+    }
+
+    .timeline > li .timeline-image {
+  background-color: {{ web_parameter.main_color }};
+    }
+
+    section#services h2, section#services h4, section#about h2, section#about h4{
+        color: {{ web_parameter.font_color_strong }};
+     }
+
+     section#portfolio .portfolio-caption{
+        color: {{ web_parameter.font_color_strong }};
+     }
+
+     .text-primary {
+        color: {{ web_parameter.main_color }} !important;
+    }
+
+    .strong_font, .page-section{
+        color: {{ web_parameter.font_color_strong }};
+    }
+
+    .page-section a{
+        color: {{ web_parameter.font_color }};
+    }
+
+    .list-group a{
+        color: {{ web_parameter.font_color_strong }};
+    }
+
+    .btn-primary{
+        background-color: {{ web_parameter.font_color_strong }} !important;
+        border-color: {{ web_parameter.font_color_strong }} !important;
+    }
+
+    textarea {
+        color: {{ web_parameter.font_color_strong }} !important;
+    }
+
+    footer {
+        color: {{ web_parameter.font_color_strong }} !important;
+    }
+
+    .navbar-toggler-right
+    {
+        background-color: {{ web_parameter.font_color_strong }} !important;
+        color: {{ web_parameter.font_color }} !important;
+    }
+
+    h5 a{
+        color: {{ web_parameter.font_color_strong }} !important;
+    }
+
+
+
+  </style>
+

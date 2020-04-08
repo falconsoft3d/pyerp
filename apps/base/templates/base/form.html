@@ -1,0 +1,122 @@
+{% extends "base/dashboard.html" %}
+{% load humanize %}
+{% load bootstrap4 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+
+{% load static %}
+{% load erp_tags %}
+{% block header %}
+  <link rel="shortcut icon" href="{% static '.' %}/dist/favicon.png" type="image/x-icon"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static '/plugins/fontawesome-free/css/all.min.css' %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="{{ STATIC_URL }}plugins/toastr/toastr.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="{% static '/dist/css/adminlte.min.css' %}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="{% static 'plugins/select2/css/select2.min.css' %}">
+
+    {{ form.media }}
+{% endblock header %}
+
+{% block head %}
+<style>
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #563D7C !important;
+    margin-top: -2px;
+    border: 1px solid #ced4da;
+  }
+  .select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0px;
+  }
+  .select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: calc(2.25rem + 2px);
+    padding-top: 7px;
+    padding-left: .375rem;
+  }
+  .select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+  .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: calc(2.25rem + 2px);
+    padding-top: 7px;
+    padding-left: .375rem;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    top: 75%;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<div class="row" style="padding:5px;" >
+  <div class="card card-outline col-12">
+    <form class="form-horizontal" method="post" role="form" enctype="multipart/form-data">
+      <div class="card-header" style="background-color:#ffffff;">
+        <a title=" {{ _('Back') }}" href="{{ back_url }}" class="btn"><i class="fas fa-arrow-left"></i></a>
+        <button title=" {{ _('Save') }}" type="submit" class="btn btn-light"><i class="far fa-save"></i></button>
+      </div>
+      <div class="card-body">
+        {% csrf_token %}
+        {% for hidden in form.hidden_fields %}
+          {{ hidden }}
+        {% endfor %}
+        {% for field in form.visible_fields %}
+          {% if forloop.counter0|divisibleby:"2" or forloop.counter0 == 0 %}
+            <div class="row">
+          {%endif%}
+          <div class="col-sm-6">
+            <div class="form-group">
+              {% bootstrap_field field %}
+            </div>
+          <!-- /.col -->
+          </div>
+          {% if forloop.counter|divisibleby:"2" %}
+            </div>
+            <!-- /.row -->
+          {% elif forloop.last %}
+              <div class="col-sm-6">
+                <div class="form-group">
+                </div>
+              <!-- /.col -->
+              </div>
+            </div>
+            <!-- /.row -->
+          {%endif%}
+        {% endfor %}
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<!-- Select2 -->
+<script src="{% static 'plugins/select2/js/select2.full.min.js' %}"></script>
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.static-select2').select2()
+  })
+</script>
+{% endblock scripts %}

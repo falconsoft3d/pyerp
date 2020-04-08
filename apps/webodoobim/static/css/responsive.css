@@ -1,0 +1,751 @@
+/********--------responsive css of main index-----**********/
+@media only screen and (max-width: 1500px) {
+	
+	
+}
+@media only screen and (max-width: 1400px) {
+    .tb-flex-bdr-img:after {
+        right: -4%;
+        top: 50px;
+        width: 108%;
+    }
+	
+	
+}
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+}
+
+
+/**********************992 & 1199 start******************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .social_links ul li {
+        margin-right: 8px;
+    }
+    nav > ul > li > a {
+        padding: 30px 8px 25px 8px;
+    }
+    .sc_navigation .nav_left_margin {
+        margin-left: 0;
+    }
+    .caret_btn span {
+        left: 32px;
+        top: 30px;
+    }
+    .tb_es_input_width {
+        width: 30%;
+    }
+    .galery_2_wraper ul li {
+        margin-right: 8px;
+    }
+	.tb_quality_servc_wraper{
+		width:100%;
+	}
+    .tab_img_overlay h1 {
+        font-size: 14px;
+    }
+    .tb-flex-bdr-img:after {
+        right: -6%;
+        top: 50px;
+        width: 112%;
+    }
+    .service_slider_btm_info h4 {
+        font-size: 14px;
+    }
+    .tb_nl_heading_wrapper h2 span,
+    .tb_nl_heading_wrapper h2 {
+        font-size: 20px;
+    }
+    .btm_foter_box {
+        font-size: 14px;
+    }
+    .tb_nl_form_wrapper input {
+        width: 420px;
+    }
+	.tab_abt_tb li{
+		margin-right:70px;
+	}
+	.video_wrapper a{
+		margin-left:0;
+	}
+	.tb_btm_link_right{
+		float:left;
+		margin-top:10px;
+	}
+	nav > ul{
+		width:102%;
+	}
+	header .serach-header{
+		margin-left:13px;
+	}
+}
+
+
+/********---------1024 css responsive start-------***/
+
+@media (max-width: 1024px) {
+    .tb-flex-bdr-img:after {
+        right: -4%;
+        top: 50px;
+        width: 108%;
+    }
+    .jp_top_jobs_category_wrapper {
+        width: 50%;
+    }
+	.tb_quality_servc_wraper{
+		width:100%;
+	}
+}
+
+
+/*********----------991 responsive css-------**********/
+
+@media (max-width: 991px) {
+    .camera_wrap .camera_pag .camera_pag_ul {
+        left: 46%;
+    }
+    #theme-main-banner .camera_caption .container h1 {
+        font-size: 34px;
+    }
+    .social_links_wrapper {
+        float: left;
+        width: 100%;
+    }
+    .logo {
+        position: relative;
+        z-index: 100;
+        padding: 12px;
+    }
+    header .bt_search_wrapper_respnsive {
+        position: relative;
+        z-index: 100;
+        float: right;
+        text-align: cenetr;
+        left: -70px;
+        top: 15px;
+    }
+	
+    header .bt_search_wrapper_respnsive .searchd i {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        line-height: 42px;
+    }
+    header .serach-header .searchbox form button i {
+        margin-left: 10px;
+    }
+    .tb-flex-bdr-img {
+        margin-top: 50px;
+    }
+    .jp_banner_jobs_categories_wrapper {
+        padding-bottom: 90px;
+    }
+    .tb-flex-bdr-img:after {
+        right: 10%;
+        top: 53px;
+        width: 80%;
+        height: 75%;
+    }
+    .tb-flex-bdr-img img {
+        text-align: center;
+        display: inline-block;
+        width: auto;
+    }
+    .service_slider_btm_info h4 {
+        font-size: 16px;
+    }
+    .response_tab_btm {
+        padding-top: 40px;
+    }
+    .best_Service_wrapper_img img {
+        top: -70px;
+    }
+    .galery_2_wraper ul li {
+        margin-right: 0;
+    }
+    .best_Service_wrapper {
+        padding-bottom: 60px;
+    }
+    .counter_overlay {
+        padding-bottom: 0;
+    }
+    .tb_icon:before,
+    .counter_cntnt_box:hover .tb_icon:before {
+        border-right: 268px solid transparent;
+    }
+    .counter_cntnt_box {
+        padding-bottom: 120px;
+    }
+    .tab_img_overlay h1 {
+        font-size: 14px;
+    }
+    .tb_pricing_table {
+        padding-bottom: 40px
+    }
+    .tb_work_txt_wrapper {
+        padding-top: 50px;
+    }
+    .tb_pricing_box .pricing-table-default {
+        margin-bottom: 60px;
+    }
+    .tb_nl_heading_wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .tb_nl_form_wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px
+    }
+	.project_single_wrapper{
+		padding-bottom:60px;
+	}
+    .tb_nl_heading_wrapper i {
+        display: none;
+    }
+    .tb_blog_wrapper {
+        padding-bottom: 50px
+    }
+    .pd_2 {
+        width: 50%;
+    }
+    .gallery-list img {
+        width: 100%;
+    }
+   
+   
+	
+    .twiter_cntnt {
+        margin-left: 50px;
+    }
+	.error_wrapper_content{
+		margin-top:50px;
+	}
+    .blog_img_wraper img {
+        width: 100%;
+    }
+    .blog_box_wrapper {
+        margin-bottom: 50px;
+    }
+    .copyright_icons li,
+    .tb_foter_left {
+        font-size: 13px;
+    }
+    .section3_copyright_middle {
+        float: left;
+    }
+   .gc_prt1_img_wrapper, .gc_prt2_img_wrapper, .gc_prt3_img_wrapper, .gc_prt4_img_wrapper{
+		width:25%;
+	}
+    .tb_partner_wrapper {
+        padding-top: 30px;
+    }
+	.portfolio-nav ul li.is-checked{
+		margin-top:0;
+	}
+	.gallery-area .portfolio-nav{
+		border-top:0;
+	}
+	.tb_quality_servc_wraper{
+		width:100%;
+	}
+	.tb_work_cmpny_wrapper{
+		padding-top:0;
+	}
+	.tab_abt_tb{
+		margin-left:20px;
+	}
+	.tab_abt_tb li{
+		margin-right:50px;
+	}
+	.sales-chart{
+		margin-top:50px;
+	}
+	.cmpny_box_wrapper{
+		margin-bottom:0;
+		margin-top:50px;
+	}
+	.spd{
+		margin-bottom:30px;
+	}
+	.blog_box_padding{
+		margin-bottom:0;
+	}
+	.blog_single_btm_t{
+		margin-top:60px;
+	}
+	.blog_pagination_section{
+		padding-bottom:60px;
+	}
+	.tb_blog_section{
+		padding-bottom:50px;
+	}
+	.sidebar_widget .video_wrapper img{
+		width:100%;
+	}
+	.bs_btm_pader{
+		padding-top:50px;
+	}
+	.team_overlay_left_img img{
+		top:20px
+	}
+	.team_overlay_right_img img{
+		top:20px
+	}
+	.cnt_overlay_left_img img{
+		top:-53px;
+	}
+	.cnt_overlay_right_img img{
+		top:-53px;
+	}
+}
+
+
+/*********----------768 responsive css-------**********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.testi_client_cont_sec{
+		width:100%;
+	}
+}
+
+
+/*********----------767 responsive css-------**********/
+
+@media (max-width: 767px) {
+    .camera_wrap .camera_pag .camera_pag_ul {
+        left: 43%;
+    }
+    .tb-flex-bdr-img:after {
+        right: 10%;
+        top: 53px;
+        width: 80%;
+        height: 75%;
+    }
+    .tb-flex-bdr-img img {
+        text-align: center;
+        display: inline-block;
+        width: auto;
+    }
+    .tb_foter_left,
+    .tb_foter_right {
+        width: 100%;
+    }
+    .copyright_icons {
+        float: left;
+    }
+	.blog_pagination_section ul li{
+		margin-top:7px;
+	}
+    .tb_foter_right {
+        padding-left: 15px;
+    }
+   .gc_prt1_img_wrapper, .gc_prt2_img_wrapper, .gc_prt3_img_wrapper{
+		width:33.33% !important;
+	}
+    .tc_twitter_img_wrapper {
+        margin-left: 0;
+        float: left;
+    }
+    .twiter_cntnt {
+        margin-left: 0;
+        margin-top: 10px;
+        float: left;
+    }
+    #return-to-top i {
+        left: 15px;
+        top: 8px;
+    }
+    .service_slider_btm_info h4 {
+        font-size: 14px;
+    }
+    .tb_icon {
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    .count-description {
+        float: none;
+        text-align: center;
+        display: inline-block;
+        width: auto;
+    }
+    .galery_2_wraper ul li {
+        padding: 0;
+    }
+    .pd_2 {
+        width: 100%;
+    }
+    .gallery-list img {
+        width: 100%;
+    }
+   
+   
+    .gallery-area .gallery-list:hover .tab_icon_overlay li {
+        right: 40px !important;
+    }
+	.tb_btm_link_right
+	{  width:100%;
+		float:left;
+		margin-top:10px;
+	}
+	.error_wrapper_heading{
+		text-align:center;
+	}
+	.error_wrapper_heading img{
+		text-align:center;
+		display:inline-block;
+	}
+    .tc_twtfd_wrapper {
+        padding-bottom: 80px;
+    }
+    .tb_partner_wrapper {
+        padding-top: 30px;
+    }
+	.tab_abt_tb{
+		margin-left:50px;
+	}
+	.testi_client_cont_sec{
+		width:60%;
+	}
+	.tb_btm_link_right ul{
+		float:left;
+	}
+	.sub_title_section{
+		float:left;
+		width:100%;
+	}
+	.btc_blog_single_tittle_img_cont_wrapper_right{
+		padding-left:40px;
+	}
+	.tab_img_overlay_2 h1{
+		top: 45%;
+		left: 38%;
+	}
+	.cnt_overlay_left_img, .cnt_overlay_right_img, .team_overlay_left_img, .team_overlay_right_img, .service_overlay_left_img, .service_overlay_right_img, .abt_overlay_left_img, .abt_overlay_right_img, .ps_overlay_left_img, .ps_overlay_right_img{
+		display:none;
+	}
+}
+
+@media (max-width: 479px) {
+	.gc_prt2_img_wrapper, .gc_prt3_img_wrapper{
+		display:none;
+	}
+	.gc_prt1_img_wrapper{
+		width:100% !important;
+	}
+}
+
+/*********----------480 responsive css-------**********/
+
+@media (max-width: 480px) {
+    .camera_wrap .camera_pag .camera_pag_ul {
+        left: 40%;
+    }
+    .tb-flex-bdr-img:after {
+        display: none;
+    }
+    .jp_top_jobs_category_wrapper,
+    .tb_service_tab_wrapper .tab-area {
+        width: 100%;
+    }
+    .best_Service_wrapper_img {
+        display: none;
+    }
+    .tb_nl_form_wrapper input {
+        float: none;
+        width: 250px;
+    }
+    .tb_es_input_width {
+        width: 100%;
+        margin-left: 0;
+    }
+    .jp_banner_jobs_categories_wrapper {
+        padding-bottom: 50px;
+    }
+    .tb_partner_wrapper {
+        padding-top: 30px;
+    }
+	.tb_abt_cmpny_wrapper:before{
+		display:none;
+	}
+    .letter_btn_wrapper {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .tb_icon:before,
+    .counter_cntnt_box:hover .tb_icon:before {
+        border-right: 195px solid transparent;
+    }
+	.tb_vedio_cntnt h1{
+		font-size:26px;
+	}
+	.tab_abt_tb li{
+		margin-top:10px;
+	}
+    .gc_prt1_img_wrapper,
+    .gc_prt2_img_wrapper,
+    .gc_prt3_img_wrapper {
+        width: 100% !important;
+    }
+	header .serach-header .searchbox form input{
+		width:52%;
+	}
+	.testi_client_cont_sec{
+		width:100%;
+	}
+	.sub_title_section{
+		top:0;
+	}
+	.tb_btm_link_left li a{
+		padding:0px 15px;
+	}
+	.tb_btm_link_left li{
+	margin-right:6px;
+	}
+	.btc_blog_single_tittle_img_cont_wrapper{
+		width:100%;
+		padding-left:0;
+		padding-right:0;
+		padding-bottom:0;
+	}
+}
+
+
+/*********----------481 $ 766 responsive css-------**********/
+
+@media (min-width: 481px) and (max-width: 766px) {
+    .tb-flex-bdr-img:after {
+        display: none;
+    }
+    .tb-flex-bdr-img img {
+        width: 100%;
+        float: left;
+    }
+    .jp_top_jobs_category_wrapper {
+        width: 100%;
+    }
+    .tb_nl_form_wrapper {
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    .best_Service_wrapper_img {
+        display: none;
+    }
+    .tb_service_tab_wrapper .tab-area {
+        width: 100%;
+    }
+    .letter_btn_wrapper {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .tb_nl_form_wrapper input {
+        float: none;
+        width: 450px;
+        left: 0;
+    }
+	.sub_title_section{
+		top:5px;
+	}
+    .tb_es_input_width {
+        width: 100%;
+        margin-left: 0;
+    }
+    .jp_banner_jobs_categories_wrapper {
+        padding-bottom: 50px;
+    }
+	.testi_client_cont_sec{
+		width:100%;
+	}
+	.tb_abt_cmpny_wrapper:before{
+		display:none;
+	}
+	.btc_blog_single_tittle_img_cont_wrapper{
+		width:100%;
+		padding-left:0;
+		padding-right:0;
+		padding-bottom:0;
+	}
+}
+
+
+/*********----------321 & 480 responsive css-------**********/
+
+@media (min-width: 321px) and (max-width: 480px) {
+  
+  
+    .blog_icon_overlay li span {
+        font-size: 10px;
+        margin-top: -18px;
+    }
+    .blog_icon_overlay li {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 4px;
+        line-height: 11px;
+    }
+    .blog_icon_overlay li img {
+        width: 50px;
+        height: 50px;
+        margin-top: -1px;
+    }
+    .blog_btm_cntnt {
+        width: 100%;
+        margin-top: 0;
+    }
+    .partner_slider_wrapper .owl-theme .owl-nav {
+        top: -85px;
+    }
+	.tb_btm_link_left li a {
+		padding: 0px 10px;
+		font-size:10px;
+	}
+	.tb_btm_link_right li a {
+		float: left;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+}
+}
+
+
+/*********----------320 responsive css-------**********/
+
+@media (max-width: 320px) {
+    .camera_wrap .camera_pag .camera_pag_ul {
+        left: 38%;
+    }
+    .tb-flex-bdr-img:after {
+        display: none;
+    }
+    .jp_top_jobs_category_wrapper {
+        width: 100%;
+    }
+    .tb_partner_wrapper {
+        padding-top: 30px;
+    }
+    .gc_prt1_img_wrapper,
+    .gc_prt2_img_wrapper,
+    .gc_prt3_img_wrapper {
+        width: 100% !important;
+    }
+	.tb_vedio_cntnt h1{
+		font-size:26px;
+	}
+    .partner_slider_wrapper .owl-theme .owl-nav {
+        top: -85px;
+    }
+	.tab_abt_tb li{
+		margin-top:10px;
+	}
+    .tb_icon:before,
+    .counter_cntnt_box:hover .tb_icon:before {
+        border-right: 170px solid transparent;
+    }
+    .abt_list_wrapper li {
+        font-size: 14px;
+    }
+	.tb_abt_cmpny_wrapper:before{
+		display:none;
+	}
+	.tb_btm_link_left li{
+		margin-right:6px;
+		margin-top:5px;
+	}
+    .jp_banner_jobs_categories_wrapper {
+        padding-bottom: 50px;
+    }
+    .service_slider_btm_info h4 {
+        font-size: 12px;
+    }
+   
+   
+    .blog_icon_overlay li span {
+        font-size: 10px;
+        margin-top: -18px;
+    }
+	.gallery-area .gallery-list:hover .tab_icon_overlay_2 li{
+		right:10px !important;
+	}
+    .blog_icon_overlay li {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 4px;
+        line-height: 11px;
+    }
+	.btc_blog_single_tittle_img_cont_wrapper{
+		width:100%;
+		padding-left:0;
+		padding-right:0;
+		padding-bottom:0;
+	}
+    .blog_icon_overlay li img {
+        width: 50px;
+        height: 50px;
+        margin-top: -1px;
+    }
+    .blog_btm_cntnt {
+        width: 100%;
+        margin-top: 0;
+    }
+	.testi_client_cont_sec{
+		width:100%;
+	}
+	.sub_title_section{
+		top:0;
+	}
+	.tb_btm_link_left li a {
+		padding: 0px 10px;
+		font-size:10px;
+	}
+	.tb_btm_link_right li a {
+		float: left;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+}
+.tab_img_overlay_2 h1 {
+    top: 37%;
+    left: 35%;
+}
+}
+
+@media (max-width: 609px) {
+    #theme-main-banner .camera_caption .container h1 {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 15px 15px;
+    }
+    .tb_nl_form_wrapper input {
+        float: none;
+        width: 300px;
+        left: 0;
+    }
+    .letter_btn_wrapper {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+	
+}
+
+
+@media (max-width: 580px) {
+	.galery_2_wraper ul li{
+		float:left;
+		width:50%;
+	}
+}

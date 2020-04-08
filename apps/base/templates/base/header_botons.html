@@ -1,0 +1,69 @@
+
+<div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      {% for btn in breadcrumbs %}
+        {% if btn.url %}
+          <li class="breadcrumb-item"><a href="{{ btn.url }}">{{ btn.name }}</a></li>
+        {% else %}
+          <li class="breadcrumb-item active" aria-current="page">{{ btn.name }}</li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
+</div>
+<div class="d-flex">
+  <div>
+    <a title=" {{ _('Back') }}" href="{{ back_url }}" class="btn btn-light"><i class="fas fa-arrow-left"></i></a>
+    {% if form_template %}
+      <button title=" {{ _('Save') }}" type="submit" class="btn btn-light"><i class="far fa-save"></i></button>
+    {% else %}
+      <a title=" {{ _('Edit') }}" href="{{ update_url }}" class="btn btn-light"><i class="fa fa-pen"></i></a>
+    {% endif %}
+    {% if object %}
+      <button title="{{ _('Delete') }}" onclick="return abrir_modal('{{ delete_url }}')" type="button" class="btn btn-light"><span class="fa fa-trash"></span></button>
+      <a title="{{ _('Duplicate') }}" href="#" class="btn btn-light"><i class="fa fa-copy"></i></a>
+      {% if print_url %}
+        <a title="{{ _('Print') }}" href="{% url print_url object.pk %}" class="btn btn-light"><i class="fas fa-download"></i></a>
+      {% endif %}
+    {% endif %}
+  </div>
+  <div class="ml-auto state-bar no_active_bar">
+    <style>
+      .active_bar{
+        font-weight: bold;
+      }
+      .no_active_bar{
+        color:#777;
+      }
+      .btn-manger {
+        color: {{ user.active_company.font_color }};
+        background-color: {{ user.active_company.main_color }};
+      }
+    </style>
+    {% if backward %}
+      <a title=" {{ _('backward') }}" href="{{ backward }}" class="btn btn-light btn-manger ml-2"> <i class="fas fa-chevron-left"></i></a>
+    {% else %}
+      <a title=" {{ _('backward') }}" href="#" class="btn disabled btn-manger ml-2"> <i class="fas fa-chevron-left"></i></a>
+    {% endif %}
+    {% if forward %}
+      <a title=" {{ _('forward') }}" href="{{ forward }}" class="btn btn-light btn-manger"> <i class="fas fa-chevron-right"></i></a>
+    {% else %}
+      <a title=" {{ _('forward') }}" href="#" class="btn disabled btn-manger"> <i class="fas fa-chevron-right"></i></a>
+    {% endif %}
+  </div>
+</div>
+<hr class="style1">
+<div class="d-flex align-items-center">
+  <div>
+    {% if object %}
+      {% for btn in header_state_botons %}
+        <a title="{{ btn.name }}" href="{{ btn.url }}" class="btn btn-light {{ btn.class }}">{{ btn.name }}</a>
+      {% endfor %}
+    {% endif %}
+  </div>
+  <div class="ml-auto">
+    {{ header_state|safe }}
+  </div>
+</div>
+<hr class="style1">

@@ -1,0 +1,92 @@
+{% extends "base/dashboard.html" %}
+{% load humanize %}
+{% load static %}
+{% load erp_tags %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'plugins/datatables/dataTables.bootstrap4.css' %}">
+<link rel="stylesheet" href="{% static 'plugins/datatables/extensions/Buttons/css/buttons.dataTables.min.css' %}">
+{% endblock %}
+{% block content %}
+<div class="row" style="padding:5px;">
+    <div class="card card-outline lg col-12">
+        <div class="card-header">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        {% for btn in breadcrumbs %}
+                            {% if btn.url %}
+                                <li class="breadcrumb-item"><a href="{% url btn.url %}">{{ btn.name }}</a></li>
+                            {% else %}
+                                <li class="breadcrumb-item active" aria-current="page">{{ btn.name }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ol>
+                </nav>
+            </div>
+            <a title=" {{ _('Create') }}" href="{{ add_url }}" class="btn btn-light"><i class="fa fa-plus"></i></a>
+            {% if  web_parameter.show_btn_export == 'True' %}
+            <a title=" {{ _('Download') }}" href="#" class="btn btn-light"><i class="fa fa-file-excel"></i></a>
+            {% endif %}
+            {% if  web_parameter.show_btn_import == 'True' %}
+             <a title=" {{ _('Import') }}" href="#" class="btn btn-light"><i class="fas fa-upload"></i></i></a>
+            {% endif %}
+            {% if  web_parameter.show_btn_mass == 'True' %}
+            <a title=" {{ _('Massive Edition') }}" href="#" class="btn btn-light"><i class="fa fa-exclamation"></i></a>
+            {% endif %}
+        </div>
+        <div class="card-body">
+            <table id="list_table" class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        {% for field in fields %}
+                        <th>{{ field.string }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for object in object_list %}
+                        {% if type %}
+                          <tr data-row-location="{% url detail_url object.pk type %}" style="cursor: pointer;">
+                        {% else %}
+                          <tr data-row-location="{% url detail_url object.pk %}" style="cursor: pointer;">
+                        {% endif %}
+                            {% for field in fields %}
+                                <td class="{{ field.align }}">
+                                    {% if  field.humanize %}
+                                        {{ object|get_obj_attr:field.field|intcomma }}
+                                    {% else %}
+                                        {{ object|get_obj_attr:field.field }}
+                                    {% endif %}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'plugins/datatables/jquery.dataTables.js'%}"></script>
+<script src="{% static 'plugins/datatables/dataTables.bootstrap4.js'%}"></script>
+<script src="{% static 'plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js'%}"></script>
+<script src="{% static 'plugins/datatables/extensions/Buttons/js/buttons.flash.min.js'%}"></script>
+<script src="{% static 'plugins/datatables/extensions/Buttons/js/buttons.html5.min.js'%}"></script>
+<!--
+<script src="{% static 'plugins/datatables/extensions/Buttons/js/buttons.print.min.js'%}"></script>
+<script src="{% static 'plugins/datatables/extensions/pdfmake/pdfmake.min.js'%}"></script>
+<script src="{% static 'plugins/datatables/extensions/pdfmake/vfs_fonts.js'%}"></script>
+-->
+<script>
+    $(function () {
+        $("#list_table").DataTable({
+            "lengthMenu": [[50, 100, 200, -1], [ 50, 100, 200, "All"]]
+        });
+    });
+    $('[data-row-location]').click(function () {
+        window.location = $(this).data('rowLocation');
+    });
+</script>
+{% endblock %}

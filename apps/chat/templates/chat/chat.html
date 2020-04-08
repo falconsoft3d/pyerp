@@ -1,0 +1,164 @@
+{% load staticfiles %}
+<style>
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button-chat {
+  background-color: #092e20;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 28px;
+  width: 280px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container-chat {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input */
+.form-container-chat input {
+  width: 241px;
+  line-height: 35px;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f1f1;
+  color: #555;
+  resize: none;
+}
+
+/* When the input gets focus, do something */
+.form-container-chat input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container-chat .butn {
+  background-color: #4CAF50;
+  color: white;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container-chat .cancel {
+  opacity: 0.5;
+  float: right;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+/* Add some hover effects to buttons */
+.form-container-chat .butn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.history {
+  height: 200px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+ul li.received {
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+ul li.sent {
+  text-align: right;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: green;
+  margin-bottom: 2px;
+}
+
+</style>
+<script src="{% static 'plugins/moment/moment-with-locales.min.js' %}"></script>
+<script src="{% static 'plugins/socketio/socket.io.slim.js' %}"></script>
+<button class="open-button-chat" onclick="openForm()">Chat Online <b>PyERP</b></button>
+
+<div class="chat-popup" id="FormChat">
+  <form class="form-container-chat" action="post">
+    <a class="cancel" onclick="closeForm()"><i class="fa fa-times"></i></a>
+    <label for="msg"><b>{{ _('Message') }}</b></label>
+    <ul class="history"></ul>
+    <input placeholder="{{ _('Type message..') }}" name="msg" required/>
+
+    <button type="submit" class="butn"><i class="fa fa-paper-plane"></i></button>
+  </form>
+</div>
+
+<script>
+
+  var socket = io('http://0.0.0.0:5000');
+  $('.form-container-chat').submit(function (event) {
+    event.preventDefault();
+    var valor = $('input[name="msg"]').val();
+    socket.emit('chat', valor);
+    $('input[name="msg"]').val('');
+    $('.history').append(`<li class="sent">${valor}</li>`).animate({scrollTop: $('.history').offset().top});
+    $
+  });
+  var connect = setInterval(function () {
+    if (socket.id) {
+      socket.on('chat-' + socket.id, function (msg) {
+        $('.history').append(`<li class="received">${msg}</li>`).animate({scrollTop: $('.history').offset().top});
+      });
+      clearInterval(connect);
+    }
+  }, 1000);
+function openForm() {
+  document.getElementById("FormChat").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("FormChat").style.display = "none";
+}
+
+// function ipLookUp () {
+//   $.ajax('http://ip-api.com/json')
+//   .then(
+//       function success(response) {
+//           console.log('User\'s Location Data is ', response);
+//           console.log('User\'s Country', response.country);
+//       },
+
+//       function fail(data, status) {
+//           console.log('Request failed.  Returned status of',
+//                       status);
+//       }
+//   );
+// }
+// ipLookUp();
+</script>

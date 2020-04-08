@@ -1,0 +1,109 @@
+{% extends "base/dashboard.html" %}
+{% block content %}
+    {% if plugin_list %}
+        <div class="row" style="padding:10px;">
+          {% for app in object_list %}
+            <div class="col-md-4">
+              <div class="info-box plugind-primary">
+                <span style="width: 120px; background-size: 120px 120px; background-image: url('{{ MEDIA_URL }}plugin/{{ app.name }}.png');"
+                        class="info-box-icon {{ app.color }} elevation-1"><i class="fas {{ app.fa }}"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text"><b>{{ app.name }}</b> | {{ app.version }}</span>
+                  <span class="info-box-text">
+                    {{ app.author }} | {{ app.name }}
+                  </span>
+                    <span class="info-box-text">{{ app.description }}</span>
+                    {% if app.installed %}
+                      <a class="btn btn-danger float-right ml-1" href="{% url 'PyPlugin:delete' app.id %}"><i class="fa fa-arrow-up"> Uninstall</i></a>
+                    {% else %}
+                      <a  class="btn btn-success float-right ml-1" href="{% url 'PyPlugin:create' app.id %}"><i class="fa fa-arrow-down"> Install</i></a>
+                    {% endif %}
+                    <a class="btn btn-primary float-right ml-1" target="_blank" href="http://{{ app.website }}"><i class="fa fa-eye"> View</i></a>
+                </div>
+              </div>
+            </div>
+            <!-- endApp -->
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col align-self-end">
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+          </div>
+          <div class="col align-self-end">
+            <div class="float-right">
+              {# .... **Now the pagination section** .... #}
+              {% if is_paginated %}
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    {% if page_obj.has_previous %}
+                      <li class="page-item">
+                        <a class="page-link" href="/plugin/?page={{ page_obj.previous_page_number }}">{{ _('Previous') }}</a>
+                      </li>
+                    {% else %}
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">{{ _('Previous') }}</a>
+                      </li>
+                    {% endif %}
+                    {% for num in page_obj.paginator.page_range %}
+                      {% ifequal num page_obj.number %}
+                        <li class="page-item active">
+                          <a class="page-link" href="?page={{ num }}">{{ num }} <span class="sr-only">(current)</span></a>
+                        </li>
+                      {% else %}
+                        <li class="page-item"><a class="page-link" href="?page={{ num }}"> {{ num }}</a></li>
+                      {% endifequal %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                      <li class="page-item">
+                        <a class="page-link" href="/plugin/?page={{ page_obj.next_page_number }}">{{ _('Next') }}</a>
+                      </li>
+                    {% else %}
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">{{ _('Next') }}</a>
+                      </li>
+                    {% endif %}
+                  </ul>
+                </nav>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% else %}
+          <h3>My plugins</h3>
+          <p>No plugins found!!! :(</p>
+      {% endif %}
+{% endblock content %}
+{% block scripts %}
+    <!-- page script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            toastr.options.closeButton = true
+            toastr.options.timeOut = 11000
+            toastr.options.preventDuplicates = true
+            toastr.options.progressBar = true
+
+            {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        toastr.error("{{ error|escape }}")
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    toastr.error("{{ error|escape }}")
+                {% endfor %}
+            {% endif %}
+
+            {% if messages %}
+                {% for message in messages %}
+                    {% if message.tags == 'debug' %}toastr.info("{{ message }}"){% endif %}
+                    {% if message.tags == 'info' %}toastr.info("{{ message }}"){% endif %}
+                    {% if message.tags == 'success' %}toastr.success("{{ message }}"){% endif %}
+                    {% if message.tags == 'warning' %}toastr.warning("{{ message }}"){% endif %}
+                    {% if message.tags == 'error' %}toastr.error("{{ message }}"){% endif %}
+                {% endfor %}
+            {% endif %}
+        });
+    </script>
+{% endblock %}

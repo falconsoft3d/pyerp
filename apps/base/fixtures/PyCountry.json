@@ -1,0 +1,2989 @@
+[{
+    "model": "base.pycountry",
+    "pk": 1,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Afganist\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 2,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "\u00c5land, Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 3,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Albania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 4,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Alemania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 5,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Andorra"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 6,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Angola"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 7,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Anguila"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 8,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Ant\u00e1rtida"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 9,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Antigua y Barbuda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 10,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Arabia Saudita"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 11,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Argelia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 12,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Argentina"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 13,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Armenia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 14,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Aruba"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 15,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Australia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 16,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Austria"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 17,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Azerbaiy\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 18,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bahamas (las)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 19,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bangladesh"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 20,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Barbados"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 21,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bahrein"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 22,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "B\u00e9lgica"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 23,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Belice"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 24,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Benin"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 25,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bermudas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 26,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Belar\u00fas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 27,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bolivia (Estado Plurinacional de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 28,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bonaire, San Eustaquio y Saba"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 29,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bosnia y Herzegovina"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 30,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Botswana"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 31,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Brasil"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 32,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Brunei Darussalam"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 33,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bulgaria"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 34,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Burkina Faso"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 35,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Burundi"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 36,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bhut\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 37,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Cabo Verde"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 38,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Camboya"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 39,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Camer\u00fan"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 40,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Canad\u00e1"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 41,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Qatar"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 42,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Chad"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 43,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Chile"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 44,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "China"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 45,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Chipre"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 46,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Colombia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 47,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Comoras (las)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 48,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Corea (la Rep\u00fablica Popular Democr\u00e1tica de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 49,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Corea (la Rep\u00fablica de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 50,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "C\u00f4te d'Ivoire"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 51,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Costa Rica"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 52,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Croacia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 53,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Cuba"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 54,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Cura\u00e7ao"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 55,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Dinamarca"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 56,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Dominica"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 57,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Ecuador"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 58,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Egipto"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 59,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "El Salvador"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 60,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Emiratos \u00c1rabes Unidos (los)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 61,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Eritrea"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 62,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Eslovaquia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 63,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Eslovenia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 64,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Espa\u00f1a"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 65,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Estados Unidos de Am\u00e9rica (los)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 66,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Estonia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 67,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Etiop\u00eda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 68,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Filipinas (las)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 69,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Finlandia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 70,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Fiji"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 71,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Francia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 72,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Gab\u00f3n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 73,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Gambia (la)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 74,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Georgia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 75,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Ghana"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 76,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Gibraltar"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 77,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Granada"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 78,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Grecia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 79,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Groenlandia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 80,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guadeloupe"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 81,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guam"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 82,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guatemala"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 83,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guayana Francesa"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 84,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guernsey"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 85,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guinea"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 86,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guinea Ecuatorial"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 87,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guinea Bissau"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 88,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Guyana"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 89,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Hait\u00ed"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 90,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Honduras"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 91,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Hong Kong"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 92,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Hungr\u00eda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 93,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "India"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 94,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Indonesia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 95,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Iraq"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 96,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Ir\u00e1n (Rep\u00fablica Isl\u00e1mica de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 97,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Irlanda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 98,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Bouvet, Isla"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 99,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Isla de Man"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 100,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Navidad, Isla de"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 101,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Islandia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 102,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Caim\u00e1n, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 103,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Cocos / Keeling, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 104,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Cook, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 105,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Feroe, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 106,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Georgia del Sur (la) y las Islas Sandwich del Sur"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 107,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Heard (Isla) e Islas McDonald"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 108,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Malvinas [Falkland], (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 109,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Marianas del Norte, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 110,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Marshall, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 111,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Pitcairn"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 112,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Salom\u00f3n, Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 113,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Turcas y Caicos, (las) Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 114,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Islas Ultramarinas Menores de los Estados Unidos (las)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 115,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "V\u00edrgenes brit\u00e1nicas, Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 116,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "V\u00edrgenes de los Estados Unidos, Islas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 117,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Israel"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 118,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Italia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 119,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Jamaica"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 120,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Jap\u00f3n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 121,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Jersey"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 122,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Jordania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 123,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Kazajst\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 124,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Kenya"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 125,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Kirguist\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 126,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Kiribati"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 127,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Kuwait"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 128,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Lao, (la) Rep\u00fablica Democr\u00e1tica Popular"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 129,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Lesotho"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 130,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Letonia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 131,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "L\u00edbano"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 132,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Liberia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 133,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Libia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 134,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Liechtenstein"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 135,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Lituania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 136,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Luxemburgo"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 137,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Macao"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 138,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Macedonia (la ex Rep\u00fablica Yugoslava de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 139,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Madagascar"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 140,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Malasia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 141,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Malawi"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 142,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Maldivas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 143,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Mal\u00ed"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 144,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Malta"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 145,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Marruecos"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 146,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Martinique"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 147,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Mauricio"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 148,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Mauritania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 149,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Mayotte"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 150,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "M\u00e9xico"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 151,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Micronesia (Estados Federados de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 152,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Moldova (la Rep\u00fablica de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 153,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "M\u00f3naco"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 154,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Mongolia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 155,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Montenegro"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 156,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Montserrat"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 157,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Mozambique"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 158,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Myanmar"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 159,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Namibia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 160,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Nauru"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 161,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Nepal"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 162,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Nicaragua"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 163,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "N\u00edger (el)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 164,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Nigeria"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 165,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Niue"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 166,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Norfolk, Isla"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 167,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Noruega"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 168,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Nueva Caledonia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 169,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Nueva Zelandia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 170,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Om\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 171,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Pa\u00edses Bajos (los)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 172,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Pakist\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 173,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Palau"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 174,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Palestina, Estado de"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 175,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Panam\u00e1"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 176,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Papua Nueva Guinea"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 177,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Paraguay"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 178,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Per\u00fa"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 179,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Polinesia Francesa"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 180,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Polonia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 181,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Portugal"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 182,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Puerto Rico"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 183,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Reino Unido de Gran Breta\u00f1a e Irlanda del Norte (el)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 184,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sahara Occidental"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 185,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Rep\u00fablica Centroafricana (la)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 186,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Rep\u00fablica Checa (la)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 187,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Congo (el)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 188,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Congo (la Rep\u00fablica Democr\u00e1tica del)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 189,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Dominicana, (la) Rep\u00fablica"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 190,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Reuni\u00f3n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 191,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Rwanda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 192,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Rumania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 193,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Rusia, (la) Federaci\u00f3n de"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 194,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Samoa"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 195,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Samoa Americana"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 196,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Saint Barth\u00e9lemy"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 197,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Saint Kitts y Nevis"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 198,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "San Marino"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 199,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Saint Martin (parte francesa)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 200,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "San Pedro y Miquel\u00f3n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 201,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "San Vicente y las Granadinas"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 202,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Santa Helena, Ascensi\u00f3n y Trist\u00e1n de Acu\u00f1a"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 203,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Santa Luc\u00eda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 204,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Santo Tom\u00e9 y Pr\u00edncipe"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 205,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Senegal"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 206,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Serbia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 207,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Seychelles"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 208,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sierra leona"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 209,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Singapur"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 210,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sint Maarten (parte neerlandesa)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 211,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Rep\u00fablica \u00c1rabe Siria"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 212,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Somalia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 213,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sri Lanka"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 214,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Swazilandia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 215,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sud\u00e1frica"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 216,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sud\u00e1n (el)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 217,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Sud\u00e1n del Sur"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 218,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Suecia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 219,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Suiza"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 220,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Suriname"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 221,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Svalbard y Jan Mayen"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 222,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tailandia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 223,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Taiw\u00e1n (Provincia de China)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 224,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tanzania, Rep\u00fablica Unida de"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 225,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tayikist\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 226,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Territorio Brit\u00e1nico del Oc\u00e9ano \u00cdndico (el)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 227,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tierras Australes Francesas (las)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 228,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Timor-Leste"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 229,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Togo"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 230,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tokelau"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 231,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tonga"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 232,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Trinidad y Tabago"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 233,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "T\u00fanez"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 234,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Turkmenist\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 235,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Turqu\u00eda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 236,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Tuvalu"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 237,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Ucrania"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 238,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Uganda"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 239,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Uruguay"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 240,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Uzbekist\u00e1n"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 241,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Vanuatu"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 242,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Santa Sede (la)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 243,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Venezuela (Rep\u00fablica Bolivariana de)"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 244,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Viet Nam"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 245,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Wallis y Futuna"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 246,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Yemen"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 247,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Djibouti"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 248,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Zambia"
+    }
+}, {
+    "model": "base.pycountry",
+    "pk": 249,
+    "fields": {
+        "active": true,
+        "fc": null,
+        "fm": null,
+        "uc": null,
+        "um": null,
+        "company_id": null,
+        "name": "Zimbabwe"
+    }
+}]

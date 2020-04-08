@@ -1,0 +1,155 @@
+{% extends extend_from %}
+{% load static %}
+{% load erp_tags %}
+{% block content %}
+<!-- Services -->
+<section class="page-section" id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 mb-2">
+				<div class="mt-4">
+					<img style="padding:2px;" class="card-img-top img-fluid" src="{{ object.img.url }}" alt="">
+					<div class="card-body">
+					</div>
+					{% if object.features %}
+					<p>{{ object.features|linebreaks }}</p>
+					{% endif %}
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<h3 class="card-title">{{ object.name }}
+					{% if object.brand_id.name %}
+					<small class="text-muted">( {{ object.brand_id.name }} )</small>
+					{% endif %}
+				</h3>
+				<div class="row">
+					<div class="col-lg-8">
+						{% if object.code %}
+						<small class="text-muted"><b>SKU:</b> {{ object.code }}</small>
+						{% else %}
+						<small class="text-muted"><b>SKU:</b> {{ object.id }}</small>
+						{% endif %}
+						{% if object.bar_code %}
+						<small class="text-muted"><b>{{ _('BAR CODE') }}:</b> {{ object.bar_code }}</small>
+						{% endif %}
+					</div>
+					<div class="col-lg-4">
+						<div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+
+					</div>
+				</div>
+				<style>
+				.gold{
+					color: #FFBF00;
+				}
+			    </style>
+
+
+			<hr>
+			<p class="card-text">{{ object.description|linebreaks }}</p>
+
+			{% if user|web_show_price %}
+			<div class="row">
+				<div class="col-lg-6">
+					<h5 style="color:red;">{% if user|currency_position == 'before' %} {{ user|currency_symbol }} {{ object.price }} {% else %} {{ object.price }} {{ user|currency_symbol }} {% endif %}</h5>
+				</div>
+				<div class="col-lg-6">
+					<input type="number" value="1" min="0" max="1000" step="1"/>
+				</div>
+			</div>
+
+
+			<hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="alert alert-success" role="alert">{{ _("NOT AVAILABLE") }}</div>
+				</div>
+				<div class="col-lg-6">
+					<a href="#" class="btn btn-primary float-right"><i class="fa fa-cart-plus"></i> {{ _("Add to cart") }}</a>
+				</div>
+			</div>
+			{% endif %}
+			<div id="share">
+				<!-- facebook -->
+				<a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank">
+					<img src="{% static '/img/174848.svg' %}" alt="">
+				</a>
+
+				<!-- twitter -->
+				<a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank">
+					<img src="{% static '/img/174876.svg' %}" alt="">
+				</a>
+
+				<!-- google plus -->
+				<a class="googleplus" href="https://plus.google.com/share?url={{url}}" target="blank">
+					<img src="{% static '/img/174851.svg' %}" alt="">
+				</a>
+
+				<!-- linkedin -->
+				<a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&source={{source}}" target="blank">
+					<img src="{% static '/img/174857.svg' %}" alt="">
+				</a>
+
+				<!-- pinterest -->
+				<a class="pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media={{media}}&url={{url}}&is_video=false&description={{title}}" target="blank">
+					<img src="{% static '/img/174863.svg' %}" alt="">
+				</a>
+				<style>
+				/* container */
+				#share {
+					width: 100%;
+					margin: 20px auto;
+					text-align: center;
+				}
+
+				/* buttons */
+
+				#share a {
+					width: 40px;
+					height: 40px;
+					display: inline-block;
+					margin: 8px;
+					border-radius: 50%;
+					font-size: 24px;
+					color: #fff;
+					opacity: 0.75;
+					transition: opacity 0.15s linear;
+				}
+
+				#share a:hover {
+					opacity: 1;
+				}
+
+				/* icons */
+
+				#share i {
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			</style>
+		</div>
+
+
+
+		{% if object.youtube_video %}
+		<hr>
+		<p>{{ _("Video:") }}</p>
+		<div class='bs-example' data-example-id='responsive-embed-16by9-iframe-youtube'>
+			<div class='embed-responsive embed-responsive-16by9'>
+				<iframe class='embed-responsive-item' allowfullscreen='' src='//www.youtube.com/embed/{{ object.youtube_video }}?rel=0'></iframe>
+			</div>
+		</div>
+	</br>
+	<hr>
+	{% endif %}
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+{% endblock %}

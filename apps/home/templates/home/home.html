@@ -1,0 +1,19 @@
+{% load erp_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'home/head.html' %}
+  <body id="page-top">
+  {{ web_parameter.parametro1 }}
+    {% include 'home/nav_bar.html' %}
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text" style="height:100px; padding-top:150px;">
+          <div class="intro-heading text-uppercase">{{ header_title }}</div>
+        </div>
+      </div>
+    </header>
+    {% block content %}{% endblock %}
+    {% include 'home/footer.html' %}
+  </body>
+</html>

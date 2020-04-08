@@ -1,0 +1,16 @@
+{
+	"name": "l10n_spain",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "l10n_spain",
+	"summary": "Spain location",
+	"depends": "",
+	"description": "l10n_spain",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"white",
+	"fa":"none",
+	"sequence":"1",
+	"installed":"0"
+}

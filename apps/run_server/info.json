@@ -1,0 +1,17 @@
+{
+	"name": "Run_Server",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "base",
+	"summary": "Run Servers",
+	"depends": "",
+	"description": "Demo Hello",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-purple",
+	"fa":"fa-tag",
+	"sequence":"6",
+	"installed":"0"
+
+}

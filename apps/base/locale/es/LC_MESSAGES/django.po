@@ -1,0 +1,789 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-17 15:02-0300\n"
+"PO-Revision-Date: 2019-11-02 18:08-0443\n"
+"Last-Translator: b'admin@pyerp.cl User <admin@pyerp.cl>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: apps/base/forms.py:36 apps/base/models/app.py:11
+#: apps/base/models/attribute.py:13 apps/base/models/country.py:11
+#: apps/base/models/faq.py:12 apps/base/models/image.py:12
+#: apps/base/models/product.py:36 apps/base/models/tag.py:12
+#: apps/base/models/tax.py:12 apps/base/models/uom.py:19
+#: apps/base/models/usercustom.py:42 apps/base/models/variant.py:12
+#: apps/base/models/wpayment.py:12 apps/base/views/__init__.py:64
+#: apps/base/views/__init__.py:83 apps/base/views/attribute.py:14
+#: apps/base/views/comment.py:14 apps/base/views/company.py:15
+#: apps/base/views/country.py:14 apps/base/views/faq.py:14
+#: apps/base/views/image.py:14 apps/base/views/log.py:15
+#: apps/base/views/parameter.py:14 apps/base/views/product.py:21
+#: apps/base/views/tag.py:14 apps/base/views/tax.py:14
+#: apps/base/views/uom.py:14 apps/base/views/variant.py:14
+#: apps/base/views/wparameter.py:14 apps/base/views/wpayment.py:14
+msgid "Name"
+msgstr "Nombre"
+
+#: apps/base/forms.py:37
+msgid "Last Name"
+msgstr "Apellido"
+
+#: apps/base/forms.py:39 apps/base/models/usercustom.py:46
+msgid "Mobile Phone"
+msgstr "Teléfono Móvil"
+
+#: apps/base/forms.py:40 apps/base/models/usercustom.py:47
+msgid "Birthdate"
+msgstr "Fecha de Nacimiento"
+
+#: apps/base/forms.py:41 apps/base/models/usercustom.py:48
+msgid "Sex"
+msgstr "Sexo"
+
+#: apps/base/forms.py:108 apps/base/forms.py:158
+#: apps/base/models/usercustom.py:44 apps/base/views/__init__.py:66
+#: apps/base/views/__init__.py:85 apps/base/views/company.py:18
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: apps/base/forms.py:119 apps/base/models/usercustom.py:36
+#: apps/base/templates/login.html:60
+#: apps/base/templates/usercustom/login.html:68
+#: apps/base/templates/usercustom/signup.html:81
+msgid "Password"
+msgstr "Contraseña"
+
+#: apps/base/forms.py:124 apps/base/templates/usercustom/signup.html:87
+msgid "Retype password"
+msgstr "Vuelva a escribir la contraseña"
+
+#: apps/base/forms.py:135 apps/base/forms.py:139
+msgid "The two password fields didn't match."
+msgstr "Los dos campos de contraseña no coinciden."
+
+#: apps/base/forms.py:155 apps/base/templates/usercustom/login.html:62
+msgid "User"
+msgstr "Usuario"
+
+#: apps/base/models/app.py:12
+msgid "Author"
+msgstr ""
+
+#: apps/base/models/app.py:13 apps/base/models/product.py:43
+msgid "description"
+msgstr ""
+
+#: apps/base/models/app.py:15 apps/base/templates/base/sidebar.html:153
+msgid "Website"
+msgstr ""
+
+#: apps/base/models/app.py:16
+msgid "Color"
+msgstr ""
+
+#: apps/base/models/app.py:17
+msgid "Icon"
+msgstr ""
+
+#: apps/base/models/app.py:18 apps/base/templates/base/erp_footer.html:3
+msgid "Version"
+msgstr "Versión"
+
+#: apps/base/models/app.py:19
+msgid "Sequence"
+msgstr ""
+
+#: apps/base/models/comment.py:13 apps/base/views/comment.py:15
+msgid "Comment"
+msgstr ""
+
+#: apps/base/models/cron.py:26 apps/base/models/log.py:15
+#: apps/base/models/partner.py:28 apps/base/models/product.py:62
+#: apps/base/views/page.py:14 apps/base/views/post.py:14
+msgid "Created on"
+msgstr ""
+
+#: apps/base/models/product.py:37 apps/base/views/product.py:19
+msgid "Code"
+msgstr ""
+
+#: apps/base/models/product.py:38 apps/base/views/product.py:20
+msgid "Bar Code"
+msgstr ""
+
+#: apps/base/models/product.py:39 apps/base/views/product.py:26
+msgid "Price"
+msgstr ""
+
+#: apps/base/models/product.py:40
+msgid "cost"
+msgstr ""
+
+#: apps/base/models/product.py:57 apps/base/models/uom.py:22
+msgid "type"
+msgstr ""
+
+#: apps/base/models/tax.py:13 apps/base/views/tax.py:15
+msgid "Amount"
+msgstr ""
+
+#: apps/base/models/uom.py:20 apps/base/models/uom.py:21
+#: apps/base/views/uom.py:15
+msgid "Ratio"
+msgstr ""
+
+#: apps/base/models/usercustom.py:29
+msgid "FEMALE"
+msgstr "FEMENINO"
+
+#: apps/base/models/usercustom.py:30
+msgid "MALE"
+msgstr "MASCULINO"
+
+#: apps/base/models/usercustom.py:37
+msgid "Last login"
+msgstr "Inicio de sesión"
+
+#: apps/base/models/usercustom.py:38
+msgid "Super Admin"
+msgstr "Administrador"
+
+#: apps/base/models/usercustom.py:39
+msgid "Staff"
+msgstr "Mantenimiento"
+
+#: apps/base/models/usercustom.py:40
+msgid "Active"
+msgstr "Activo"
+
+#: apps/base/models/usercustom.py:41 apps/base/templates/login.html:52
+msgid "User name"
+msgstr "Usuario"
+
+#: apps/base/models/usercustom.py:43 apps/base/views/__init__.py:65
+#: apps/base/views/__init__.py:84
+msgid "Last name"
+msgstr "Apellido"
+
+#: apps/base/models/usercustom.py:45 apps/base/views/company.py:17
+msgid "Phone"
+msgstr "Teléfono"
+
+#: apps/base/models/usercustom.py:61
+msgid "Person"
+msgstr "Persona"
+
+#: apps/base/models/usercustom.py:62
+msgid "People"
+msgstr "Personas"
+
+#: apps/base/models/website_config.py:11
+msgid "Show Blog"
+msgstr ""
+
+#: apps/base/models/website_config.py:12
+msgid "Show Shop"
+msgstr ""
+
+#: apps/base/models/website_config.py:13
+msgid "Show price"
+msgstr ""
+
+#: apps/base/models/website_config.py:14
+msgid "Show chat"
+msgstr ""
+
+#: apps/base/models/website_config.py:15
+msgid "Under Construction"
+msgstr ""
+
+#: apps/base/models/wpayment.py:13 apps/base/views/wpayment.py:15
+#, fuzzy
+#| msgid "Active"
+msgid "Web Active"
+msgstr "Activo"
+
+#: apps/base/templates/base/dashboard.html:168
+msgid "Exit"
+msgstr ""
+
+#: apps/base/templates/base/dashboard.html:173
+msgid "Select close if you want to leave the assignment.?"
+msgstr ""
+
+#: apps/base/templates/base/dashboard.html:175
+#: apps/base/templates/usercustom/logoutmodal.html:12
+#: apps/base/templates/usercustom/profile.html:103
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: apps/base/templates/base/dashboard.html:176
+#: apps/base/templates/base/navbar.html:35
+msgid "Close"
+msgstr ""
+
+#: apps/base/templates/base/detail.html:7
+msgid "Edit"
+msgstr ""
+
+#: apps/base/templates/base/detail.html:8
+msgid "Delete"
+msgstr ""
+
+#: apps/base/templates/base/detail.html:37
+msgid "Are you sure you want to delete the form?"
+msgstr ""
+
+#: apps/base/templates/base/erp_footer.html:6
+msgid "Source Code"
+msgstr ""
+
+#: apps/base/templates/base/form.html:12
+msgid "Discard"
+msgstr ""
+
+#: apps/base/templates/base/form.html:14
+#: apps/base/templates/usercustom/profile.html:83
+msgid "Save"
+msgstr ""
+
+#: apps/base/templates/base/list.html:11
+msgid "Create"
+msgstr ""
+
+#: apps/base/templates/base/navbar.html:16
+#: apps/base/templates/usercustom/login.html:43
+#: apps/base/templates/usercustom/password_reset_form.html:45
+#: apps/base/templates/usercustom/signup.html:46
+msgid "Language"
+msgstr "Idioma"
+
+#: apps/base/templates/base/navbar.html:20
+#: apps/base/templates/usercustom/login.html:47
+#: apps/base/templates/usercustom/password_reset_form.html:49
+#: apps/base/templates/usercustom/signup.html:50
+msgid "Change to"
+msgstr "Cambiar a"
+
+#: apps/base/templates/base/sidebar.html:34 apps/base/templates/login.html:69
+msgid "Home"
+msgstr "Inicio"
+
+#: apps/base/templates/base/sidebar.html:42
+msgid "Contacts"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:50
+msgid "Partners"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:68
+#: apps/base/templates/base/sidebar.html:76 apps/base/templates/home.html:52
+msgid "Products"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:83
+msgid "Variants"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:90
+msgid "Attributes"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:96
+#: apps/base/templates/shop/shop.html:10 apps/base/views/product.py:24
+#: apps/base/views/uom.py:18
+msgid "Category"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:102
+msgid "Category UOM"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:108
+msgid "Unit of Measurement"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:123
+msgid "Location"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:129 apps/base/views/country.py:27
+#: apps/base/views/country.py:42 apps/base/views/country.py:58
+#: apps/base/views/country.py:72
+msgid "Countries"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:133
+msgid "Currencies"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:137
+msgid "Taxs"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:161
+msgid "Posts"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:168
+msgid "Pages"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:176
+msgid "Comments"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:183
+msgid "Web Categorys"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:190
+msgid "Web Parameters"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:197
+msgid "Metas"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:205
+msgid "Web Payments"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:212
+msgid "Faqs"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:219
+msgid "Images"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:226
+msgid "Tags"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:233
+msgid "Web Configurations"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:249
+#: apps/base/templates/base/sidebar.html:252
+msgid "Apps"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:255
+msgid "Update"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:260
+msgid "Configuration"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:263 apps/base/templates/home.html:38
+#, fuzzy
+#| msgid "User"
+msgid "Users"
+msgstr "Usuario"
+
+#: apps/base/templates/base/sidebar.html:266
+msgid "Company"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:270
+msgid "General"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:273
+#, fuzzy
+#| msgid "Login"
+msgid "Log"
+msgstr "Inicio de sesión"
+
+#: apps/base/templates/base/sidebar.html:276
+msgid "Cron"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:280
+msgid "Parameters"
+msgstr ""
+
+#: apps/base/templates/base/sidebar.html:283
+msgid "Load Data"
+msgstr ""
+
+#: apps/base/templates/home.html:10
+msgid "Customers"
+msgstr ""
+
+#: apps/base/templates/home.html:15 apps/base/templates/home.html:29
+#: apps/base/templates/home.html:43 apps/base/templates/home.html:57
+msgid "More Informations"
+msgstr ""
+
+#: apps/base/templates/home.html:24
+msgid "Providers"
+msgstr ""
+
+#: apps/base/templates/login.html:7
+msgid "ERP in Django"
+msgstr ""
+
+#: apps/base/templates/login.html:42
+#, fuzzy
+#| msgid "Log Out"
+msgid "Log in"
+msgstr "Salir"
+
+#: apps/base/templates/login.html:72
+#: apps/base/templates/usercustom/login.html:7
+#: apps/base/templates/usercustom/login.html:55
+#: apps/base/templates/usercustom/login.html:75
+#: apps/base/templates/usercustom/password_reset_form.html:93
+#: apps/base/templates/usercustom/signup.html:107
+msgid "Login"
+msgstr "Inicio de sesión"
+
+#: apps/base/templates/shop/product.html:43
+msgid "Add to cart"
+msgstr ""
+
+#: apps/base/templates/usercustom/login.html:81
+#: apps/base/templates/usercustom/password_reset_form.html:92
+#: apps/base/templates/usercustom/signup.html:105
+msgid "Back"
+msgstr "Regresar"
+
+#: apps/base/templates/usercustom/login.html:82
+#: apps/base/templates/usercustom/password_reset_form.html:86
+#: apps/base/templates/usercustom/signup.html:106
+msgid "Password recovery"
+msgstr "Recuperar contraseña"
+
+#: apps/base/templates/usercustom/login.html:83
+#: apps/base/templates/usercustom/password_reset_form.html:94
+msgid "Signup"
+msgstr "Registro"
+
+#: apps/base/templates/usercustom/login.html:117
+#: apps/base/templates/usercustom/profile.html:134
+msgid ""
+"Your account does not have the necessary privileges to access this section. "
+"To continue, log in with an account that has the necessary privileges."
+msgstr ""
+"Su cuenta no tiene los privilegios necesarios para acceder a esta sección. "
+"Para continuar, inicie sesión con una cuenta que tenga los privilegios "
+"necesarios."
+
+#: apps/base/templates/usercustom/login.html:119
+#: apps/base/templates/usercustom/profile.html:136
+msgid "Please login to visit this page."
+msgstr "Por favor inicie sesión para visitar esta página."
+
+#: apps/base/templates/usercustom/logoutmodal.html:5
+msgid "Are you sure you want to logout?"
+msgstr ""
+
+#: apps/base/templates/usercustom/logoutmodal.html:10
+msgid "Select logout if you want to leave the session."
+msgstr ""
+
+#: apps/base/templates/usercustom/logoutmodal.html:13
+msgid "Logout"
+msgstr ""
+
+#: apps/base/templates/usercustom/password_change_form.html:15
+msgid "Actual Password"
+msgstr "Contraseña"
+
+#: apps/base/templates/usercustom/password_change_form.html:17
+msgid "Enter the actual password"
+msgstr "Vuelva a escribir la contraseña"
+
+#: apps/base/templates/usercustom/password_change_form.html:24
+msgid "New Password"
+msgstr "Contraseña"
+
+#: apps/base/templates/usercustom/password_change_form.html:26
+msgid "Enter the new password"
+msgstr "Vuelva a escribir la contraseña"
+
+#: apps/base/templates/usercustom/password_change_form.html:33
+#: apps/base/templates/usercustom/password_change_form.html:35
+msgid "Retype the new password"
+msgstr "Vuelva a escribir la contraseña"
+
+#: apps/base/templates/usercustom/password_change_form.html:43
+msgid "Submit"
+msgstr "Enviar"
+
+#: apps/base/templates/usercustom/password_reset_form.html:7
+#: apps/base/templates/usercustom/signup.html:7
+#: apps/base/templates/usercustom/signup.html:58
+#: apps/base/templates/usercustom/signup.html:99
+msgid "Sign up"
+msgstr "Registro"
+
+#: apps/base/templates/usercustom/password_reset_form.html:57
+msgid "Password Recovery"
+msgstr "Recuperar Contraseña"
+
+#: apps/base/templates/usercustom/password_reset_form.html:58
+msgid ""
+"Write the email with which you registered, validate the recaptcha and press "
+"the password recovery button."
+msgstr ""
+"Escriba el correo electrónico con el que se registro y presione el botón de "
+"recuperar contraseña"
+
+#: apps/base/templates/usercustom/profile.html:44
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#: apps/base/templates/usercustom/profile.html:96
+msgid "Crop the image"
+msgstr "Recorta la imagen"
+
+#: apps/base/templates/usercustom/profile.html:104
+msgid "Crop"
+msgstr "Recortar"
+
+#: apps/base/templatetags/erp_tags.py:37 apps/base/templatetags/erp_tags.py:39
+msgid "Your Company Name"
+msgstr ""
+
+#: apps/base/templatetags/erp_tags.py:67 apps/base/templatetags/erp_tags.py:69
+msgid "Your Company Slogan"
+msgstr ""
+
+#: apps/base/views/__init__.py:63 apps/base/views/__init__.py:82
+#, fuzzy
+#| msgid "User name"
+msgid "User Name"
+msgstr "Usuario"
+
+#: apps/base/views/activate.py:45
+msgid ""
+"Welcome, your account has been successfully activated. Please log in using "
+"your credentials."
+msgstr ""
+"Bienvenido, su cuenta ha sido activada con éxito. Inicie sesión con sus "
+"credenciales."
+
+#: apps/base/views/activate.py:50
+msgid ""
+"The sign up confirm link is invalid. If your account is not yet active, use "
+"the password recovery link."
+msgstr ""
+"El enlace de confirmación de registro no es válido. Si su cuenta aún no está"
+" activa, use el enlace de recuperación de contraseña."
+
+#: apps/base/views/attribute.py:15
+msgid "Variant"
+msgstr ""
+
+#: apps/base/views/avatar.py:55 apps/base/views/profile.py:65
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "No se encontró %(verbose_name)s que coincida con la consulta"
+
+#: apps/base/views/company.py:16
+msgid "Street"
+msgstr ""
+
+#: apps/base/views/company.py:19
+msgid "Currency"
+msgstr ""
+
+#: apps/base/views/company.py:20
+msgid "Slogan"
+msgstr ""
+
+#: apps/base/views/company.py:21
+msgid "Postal Code"
+msgstr ""
+
+#: apps/base/views/faq.py:15 apps/base/views/image.py:15
+#: apps/base/views/meta.py:14
+msgid "Content"
+msgstr ""
+
+#: apps/base/views/log.py:14 apps/base/views/product.py:29
+msgid "Created On"
+msgstr ""
+
+#: apps/base/views/log.py:16
+msgid "Note"
+msgstr ""
+
+#: apps/base/views/meta.py:13 apps/base/views/page.py:13
+#: apps/base/views/post.py:13
+msgid "Title"
+msgstr ""
+
+#: apps/base/views/page.py:15 apps/base/views/post.py:15
+msgid "Keywords"
+msgstr ""
+
+#: apps/base/views/parameter.py:15 apps/base/views/wparameter.py:15
+msgid "Value"
+msgstr ""
+
+#: apps/base/views/passwordchange.py:23
+msgid "Your password change was successfully                 processed"
+msgstr "Tu cambio de contraseña fue procesado exitosamente"
+
+#: apps/base/views/passwordreset.py:78 apps/base/views/signup.py:58
+msgid "Invalid reCAPTCHA"
+msgstr "reCAPTCHA invalido"
+
+#: apps/base/views/passwordreset.py:104
+msgid ""
+"Welcome back, your password has been successfully modified. Please log in "
+"using your credentials."
+msgstr ""
+"Bienvenido de nuevo, su contraseña ha sido modificada con éxito. Por favor "
+"Iniciar sesión usando sus credenciales."
+
+#: apps/base/views/passwordreset.py:109
+msgid "The password recovery link is invalid or has already been used."
+msgstr ""
+"El enlace de recuperación de contraseña no es válido o ya se ha utilizado."
+
+#: apps/base/views/passwordreset.py:121
+#, fuzzy, python-format
+#| msgid "%(app_name)s password recovery"
+msgid "%(app_name)s password recovery"
+msgstr "Recuperar contraseña"
+
+#: apps/base/views/passwordreset.py:133
+#, python-format
+msgid ""
+"You received this email because you requested that your password be reset to \"%(app_name)s\".\n"
+"\n"
+"Please go to the following link to recover your password:\n"
+"\n"
+"http://%(domain)s%(url)s\n"
+"\n"
+"The credentials of this link last for one (1) day.\n"
+"\n"
+"Best regards.\n"
+"\n"
+"The %(app_name)s team."
+msgstr ""
+"Recibió este correo electrónico porque solicitó que su contraseña se restableciera a %(app_name)s.\n"
+"\n"
+"Vaya al siguiente enlace para recuperar su contraseña:\n"
+"\n"
+"http://%(domain)s%(url)s\n"
+"\n"
+"Las credenciales de este enlace duran un (1) día.\n"
+"\n"
+"Saludos cordiales.\n"
+"\n"
+"El equipo %(app_name)s."
+
+#: apps/base/views/passwordreset.py:140
+#, python-format
+msgid ""
+"Instructions to recover your password in %(app_name)s were sent to the email"
+" account %(email)s"
+msgstr ""
+"Las instrucciones para recuperar su contraseña en %(app_name)s fueron "
+"enviadas a la cuenta de correo electrónico %(email)s"
+
+#: apps/base/views/passwordreset.py:148
+#, python-format
+msgid "The email provided is not registered in %(app_name)s"
+msgstr ""
+"El correo electrónico proporcionado no está registrado en %(app_name)s"
+
+#: apps/base/views/product.py:22
+msgid "UOM"
+msgstr ""
+
+#: apps/base/views/product.py:23
+msgid "Tax"
+msgstr ""
+
+#: apps/base/views/product.py:25
+msgid "Web Category"
+msgstr ""
+
+#: apps/base/views/product.py:27
+msgid "Cost"
+msgstr ""
+
+#: apps/base/views/product.py:28 apps/base/views/uom.py:17
+msgid "Type"
+msgstr ""
+
+#: apps/base/views/product.py:30
+msgid "Descriptions"
+msgstr ""
+
+#: apps/base/views/profile.py:25
+msgid "Your profile was updated successfully"
+msgstr "Tu perfil se actualizó correctamente"
+
+#: apps/base/views/signup.py:35
+msgid ""
+"Your account was created successfully. A link was sent to your email that "
+"you must sign in to confirm your sign up."
+msgstr ""
+"Tu cuenta ha sido creada exitosamente. Se envió un enlace a su correo "
+"electrónico que debe iniciar sesión para confirmar su registro."
+
+#: apps/base/views/signup.py:65
+#, python-format
+msgid "%(app_name)s sign up"
+msgstr "%(app_name)s registro"
+
+#: apps/base/views/signup.py:75
+#, python-format
+msgid ""
+"Thank you for registering in %(app_name)s, your username is: %(user)s.\n"
+"\n"
+"Please go to the following link to confirm your registration and activate your account:\n"
+"\n"
+"http://%(domain)s%(url)s\n"
+"\n"
+"The credentials of this link last for one (1) day.\n"
+"\n"
+"Best regards.\n"
+"\n"
+"The %(app_name)s team."
+msgstr ""
+"Gracias por registrarte en %(app_name)s, tu usario es: %(user)s. Por favor, ve al siguiente enlace para confirmar tu registro y activar tu cuenta:\n"
+"\n"
+"http://%(domain)s%(url)s\n"
+"\n"
+"Las credenciales de este enlace tiene una validez de un (1) día\n"
+"\n"
+"Atentamente.\n"
+"\n"
+"The equipo de %(app_name)s."
+
+#: apps/base/views/signup.py:82
+msgid ""
+"Your account has been created successfully. Open the link that was sent to "
+"your email, to confirm your registration and activate your account."
+msgstr ""
+"Tu cuenta ha sido creada exitosamente. Abre el enlace que se envió a tu "
+"correo electrónico, para confirmar tu registro y activar tu cuenta."
+
+#: apps/base/views/uom.py:16
+msgid "Rouding"
+msgstr ""

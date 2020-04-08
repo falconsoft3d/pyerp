@@ -1,0 +1,17 @@
+{
+	"name": "Sale",
+	"version":"1.0.0.1",
+	"author": "YnexT SpA",
+	"website": "www.ynext.cl",
+	"category": "Accounting",
+	"summary": "Account",
+	"depends": "",
+	"description": "Demo Hello",
+	"external_dependencies":"",
+	"type":"public",
+	"color":"bg-warning",
+	"fa":"fa-file",
+	"sequence":"2",
+	"installed":"1"
+
+}

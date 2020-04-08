@@ -1,0 +1,46 @@
+<li class="nav-item has-treeview">
+  <a href="#" class="nav-link">
+    <i class="fa fa-hdd nav-icon"></i>
+    <p>{{ _('Account') }}<i class="fas fa-angle-left right"></i></p>
+  </a>
+  <ul class="nav nav-treeview">
+    <li class="nav-item has-treeview">
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-circle"></i>
+        <p>Invoice<i class="right fas fa-angle-left"></i></p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'PyInvoice:list' 1 %}" class="nav-link">
+            <i class="far fa-dot-circle nav-icon"></i>
+            <p>{{ _("Customer Invoice") }}</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'PyInvoice:list' 2 %}" class="nav-link">
+            <i class="far fa-dot-circle nav-icon"></i>
+            <p>{{ _("Provider Invoice") }}</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'PyAccountPlan:list' %}" class="nav-link">
+        <i class="far fa-circle nav-icon"></i>
+        <p>{{ _("Account Plans") }}</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'PyAccountMove:list' %}" class="nav-link">
+        <i class="far fa-circle nav-icon"></i>
+        <p>{{ _("Account Moves") }}</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'PyJournal:list' %}" class="nav-link">
+        <i class="far fa-circle nav-icon"></i>
+        <p>{{ _("Journal") }}</p>
+      </a>
+    </li>
+  </ul>
+</li>
