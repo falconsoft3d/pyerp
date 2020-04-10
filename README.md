@@ -6,7 +6,7 @@ PyERP is an project open-source, user-oriented, **ERP** system based on Django f
 # Donate
 ```
 BTC:15a9s5ZWDGeGpVXe6oV8yZcNrwm3hFALEr
-Ethereum: 0x57402DD36c720AEB49490cD6a48bA98970c6564a
+Ethereum: 0xd762cDD9e9a9c1c2E74318f2360dFc0d93eA10C4
 Dash: XhhCA3jmjxce2qzKcFU8oc6oS3oEakzE9o
 XRP: rMdG3ju8pgyVh29ELPWaDuA74CpWW6Fxns 
 ```
