@@ -33,6 +33,7 @@ source env/bin/activate
 cd pyerp
 pip3 install -r requirements.txt
 python manage.py init_pyerp
+python manage.py createsuperuser
 python manage.py runserver
 ```
    

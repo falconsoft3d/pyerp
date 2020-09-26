@@ -47,3 +47,4 @@ virtualenv-clone==0.5.3
 webencodings==0.5.1
 wrapt==1.11.2
 xhtml2pdf==0.2.3
+reportlab==3.5.51
