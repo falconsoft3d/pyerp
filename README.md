@@ -1,15 +1,12 @@
+
+# PyERP now is close ?
+if now I will join it to my new project. partcombinator.com
+
 # PyERP
 PyERP is an project open-source, user-oriented, **ERP** system based on Django framework. If you want to help both as an **investor**, **partner** or as a **developer** send me email: mfalcon@ynext.cl :+1:.It is in development, it is not finished ,while we will upload videos so you can see our progress. Follow me [Youtube](https://www.youtube.com/channel/UCM93kgnjXu393jgKjjSkUjQ).
 
 [Dcumentation](https://falconsoft3d.github.io/pyerp/)
 
-# Donate
-```
-BTC:15a9s5ZWDGeGpVXe6oV8yZcNrwm3hFALEr
-Ethereum: 0xd762cDD9e9a9c1c2E74318f2360dFc0d93eA10C4
-Dash: XhhCA3jmjxce2qzKcFU8oc6oS3oEakzE9o
-XRP: rMdG3ju8pgyVh29ELPWaDuA74CpWW6Fxns 
-```
 
 # Deploy
 ```
