@@ -1,6 +1,6 @@
 beautifulsoup4==4.8.1
 bootstrap4==0.1.0
-certifi==2019.6.16
+certifi==2022.12.7
 chardet==3.0.4
 Django==2.2.6
 django-appconf==1.0.3
