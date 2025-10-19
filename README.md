@@ -25,6 +25,25 @@ Mi nombre es Marlon Falcón Hernández, soy desarrollador de software y consulto
 - [ ] Gestión de créditos y préstamos para empresas.
 
 
+# 🧩 Pitch Deck – ERP Multivertical con IA para PYMES
+
+Millones de pequeñas empresas aún gestionan su negocio con Excel o WhatsApp. Nuestro ERP multivertical nace para digitalizarlas con una plataforma única, modular y accesible desde cualquier dispositivo.
+
+Ofrecemos un sistema SaaS con módulos especializados para cada sector:
+Ventas Online, Punto de Venta, Servicios, Clínicas, Restaurantes, Construcción, Inmobiliarias y Créditos.
+Cada vertical comparte un mismo núcleo ERP (clientes, facturación, inventario, contabilidad) y se adapta automáticamente al negocio del usuario.
+
+La plataforma integra Inteligencia Artificial para generar presupuestos, analizar ventas, redactar correos y ofrecer reportes ejecutivos automáticos.
+
+Nuestro modelo es suscripción mensual entre 19 y 99 €, con enfoque en pymes de España y Latinoamérica. Con solo 1.000 clientes, el negocio alcanza rentabilidad recurrente.
+
+Contamos con experiencia en Odoo y soluciones verticales de construcción (BIM 2.0), y un roadmap de expansión progresiva por sectores.
+
+Buscamos 1.000.000 € de inversión para completar el desarrollo de 3 verticales iniciales (POS, Servicios y Construcción), escalar marketing digital y establecer acuerdos con distribuidores locales.
+
+Queremos democratizar la gestión empresarial con IA.
+ERP Multivertical: Inteligencia y Simplicidad para las PYMES del futuro.
+
 
 # Mi datos de contacto
 ```
