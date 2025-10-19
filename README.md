@@ -7,7 +7,7 @@ My Name is Marlon Falcón Hernández. I am a Civil Engineer and Master in Archit
 
 # Roadmap
 - [x] Products  
-- [ ] Contacts  
+- [x] Contacts  
 - [ ] Sales
 - [ ] IA Integration
 - [ ] Accounting
