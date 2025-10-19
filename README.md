@@ -1,5 +1,5 @@
 # PyERP
-yERP es un proyecto de código abierto, orientado al usuario, basado en el framework Django. Aún se encuentra en desarrollo, y estaremos subiendo videos para que puedas seguir nuestro progreso [Youtube](https://www.youtube.com/channel/UCM93kgnjXu393jgKjjSkUjQ).
+PyERP es un proyecto de código abierto, orientado al usuario, basado en el framework Django. Aún se encuentra en desarrollo, Estuvimos trabajando en él desde 2020, pero decidimos reestructurarlo completamente en 2025 para hacerlo más modular y fácil de mantener y estaremos subiendo videos para que puedas seguir nuestro progreso [Youtube](https://www.youtube.com/channel/UCM93kgnjXu393jgKjjSkUjQ).
 
 
 # Quién soy
