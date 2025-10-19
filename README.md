@@ -1,26 +1,34 @@
 # PyERP
-PyERP is an project open-source, user-oriented, **ERP** system based on Django framework, it is not finished ,while we will upload videos so you can see our progress. Follow me [Youtube](https://www.youtube.com/channel/UCM93kgnjXu393jgKjjSkUjQ).
+yERP es un proyecto de código abierto, orientado al usuario, basado en el framework Django. Aún se encuentra en desarrollo, y estaremos subiendo videos para que puedas seguir nuestro progreso [Youtube](https://www.youtube.com/channel/UCM93kgnjXu393jgKjjSkUjQ).
 
 
-# Who I am
-My Name is Marlon Falcón Hernández. I am a Civil Engineer and Master in Architecture. I have worked for years in ERP development.
+# Quién soy
+Mi nombre es Marlon Falcón Hernández, soy desarrollador de software y consultor ERP con más de 10 años de experiencia en el desarrollo e implementación de sistemas ERP y CRM para pequeñas y medianas empresas. He trabajado con diversas tecnologías y plataformas, y mi objetivo es crear soluciones accesibles y eficientes para la gestión empresarial.
 
 # Roadmap
-- [x] Products  
-- [x] Contacts  
-- [ ] Sales
-- [ ] IA Integration
-- [ ] Accounting
-- [ ] Inventory
-- [ ] Purchases
-- [ ] Website
-- [ ] Human Resources
+- [x] Productos 
+- [x] Contactos 
+- [ ] Ventas
+- [ ] Integración con IA
+- [ ] Contabilidad
+- [ ] Inventario
+- [ ] Compras
+- [ ] Sitio Web
+- [ ] Recursos Humanos
+- [ ] Ventas Online (E-commerce)
+- [ ] Punto de Venta.
+- [ ] Gestion de servicios como peluquerías, talleres, etc.
+- [ ] Clinicas y centros de salud.
+- [ ] Restaurantes y bares.
+- [ ] Construcción y obras.
+- [ ] Real State y alquileres.
+- [ ] Gestión de créditos y préstamos para empresas.
 
 
 
-# My contact data
+# Mi datos de contacto
 ```
-Marlon Falcón Hernández | España | Madrid
+Marlon Falcón Hernández | España | Valencia
 * ERP, CRM y Software: https://www.marlonfalcon.com
 » Email: mfalconsoft@gmail.com , falconsof.3d@gmail.com
 » Github: https://github.com/falconsoft3d
