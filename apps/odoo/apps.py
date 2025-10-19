@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 
 class OdooConfig(AppConfig):
-    name = 'odoo'
+    name = 'apps.odoo'

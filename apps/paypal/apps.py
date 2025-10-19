@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 
 class PaypalConfig(AppConfig):
-    name = 'paypal'
+    name = 'apps.paypal'

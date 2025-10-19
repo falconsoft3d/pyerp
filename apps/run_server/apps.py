@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 
 class RunServerConfig(AppConfig):
-    name = 'run_server'
+    name = 'apps.run_server'
