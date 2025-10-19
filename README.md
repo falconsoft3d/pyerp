@@ -4,7 +4,6 @@ PyERP is an project open-source, user-oriented, **ERP** system based on Django f
 
 # Who I am
 My Name is Marlon Falcón Hernández. I am a Civil Engineer and Master in Architecture. I have worked for years in ERP development.
-![Alt text](https://github.com/falconsoft3d/pyerp/blob/master/marketing/marlon-falcon-youtube.png?raw=true "Marlon")
 
 
 # My contact data
