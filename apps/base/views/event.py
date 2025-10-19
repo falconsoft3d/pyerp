@@ -1,7 +1,7 @@
 # Django Library
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 # Localfolder Library
 from ..models import PyEvent

@@ -3,4 +3,5 @@ from django.apps import AppConfig
 
 
 class L10NSpainConfig(AppConfig):
-    name = 'l10n_spain'
+    name = 'apps.l10n_spain'
+    default_auto_field = 'django.db.models.BigAutoField'

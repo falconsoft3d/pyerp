@@ -8,7 +8,7 @@ from django.core.management import call_command
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.urls import clear_url_caches, reverse, reverse_lazy
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 

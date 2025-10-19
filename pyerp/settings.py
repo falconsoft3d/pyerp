@@ -15,7 +15,7 @@ import logging
 import os
 
 # Django Library
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 _logger = logging.getLogger(__name__)
 
@@ -263,3 +263,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated', )
 }
+
+# ========================================================================== #
+# Default primary key field type for Django 4.2
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

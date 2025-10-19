@@ -1,7 +1,7 @@
 # Django Library
-from django.conf.urls import url
+from django.urls import re_path as url
 from django.urls import path
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 # Thirdparty Library
 from apps.base.views.blog import BlogView, PostDetailView
