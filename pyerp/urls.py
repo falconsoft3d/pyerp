@@ -51,10 +51,12 @@ with open('%s/installed_apps.py' % BASE_DIR, 'r') as ins_apps_file:
             urlpatterns += [path('', include('apps.webodoobim.urls'))]
 
         else:
-            _, app = line.split('.')
-            urlpatterns += [
-                path(
-                    '{}/'.format(app.rstrip('\n')),
-                    include('{}.urls'.format(line.strip()))
-                )
-            ]
+            parts = line.split('.')
+            if len(parts) >= 2:
+                app = parts[-1]  # Último elemento después del último punto
+                urlpatterns += [
+                    path(
+                        '{}/'.format(app.rstrip('\n')),
+                        include('{}.urls'.format(line.strip()))
+                    )
+                ]

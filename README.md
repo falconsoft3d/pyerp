@@ -4,18 +4,6 @@ PyERP is an project open-source, user-oriented, **ERP** system based on Django f
 [Documentation](https://falconsoft3d.github.io/pyerp/)
 
 
-# Deploy
-```
-apt-get update && apt-get upgrade -y
-apt  install docker.io
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-```
-docker-compose up -d --build
-```
-
 ![Alt text](https://github.com/falconsoft3d/pyerp/blob/master/marketing/pyerp-m.png?raw=true "Ynext")
 
 # Install PyERP using the following command

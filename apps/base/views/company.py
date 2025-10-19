@@ -9,6 +9,7 @@ from dal import autocomplete
 
 # Localfolder Library
 from ..models import PyCompany, PyUser
+from ..forms.company import CompanyForm
 from .web_father import (
     FatherCreateView, FatherDeleteView, FatherDetailView, FatherListView,
     FatherUpdateView)
@@ -66,14 +67,14 @@ class CompanyDetailView(LoginRequiredMixin, FatherDetailView):
 # ========================================================================== #
 class CompanyCreateView(LoginRequiredMixin, FatherCreateView):
     model = PyCompany
-    fields = OBJECT_FORM_FIELDS
+    form_class = CompanyForm
     template_name = 'base/form.html'
 
 
 # ========================================================================== #
 class CompanyUpdateView(LoginRequiredMixin, FatherUpdateView):
     model = PyCompany
-    fields = OBJECT_FORM_FIELDS
+    form_class = CompanyForm
     template_name = 'base/form.html'
 
 

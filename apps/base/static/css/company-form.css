@@ -1,0 +1,116 @@
+/* Color Picker Styles for Company Form */
+.color-picker-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-picker {
+    width: 60px !important;
+    height: 40px !important;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0 !important;
+}
+
+.color-picker:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.color-preview {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.color-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-input-group label {
+    margin-bottom: 0;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.color-text-input {
+    flex: 1;
+    min-width: 100px;
+}
+
+/* Style improvements for color fields in form */
+.field-main_color,
+.field-content_wrapper_color,
+.field-font_color {
+    margin-bottom: 20px;
+}
+
+.field-main_color .color-picker,
+.field-content_wrapper_color .color-picker,
+.field-font_color .color-picker {
+    margin-right: 10px;
+}
+
+/* Real-time preview styles */
+.color-preview-demo {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+}
+
+.color-preview-demo h6 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.preview-main {
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.preview-content {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.preview-font {
+    padding: 5px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .color-input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .color-input-group label {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .color-picker {
+        width: 100% !important;
+        max-width: 150px;
+    }
+}

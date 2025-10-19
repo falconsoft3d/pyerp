@@ -1,8 +1,0 @@
-Dockerizar
-Pago
-Inventario
-Localizaciones
-Contabilidad
-Tienda
-Medios de Pago
-At hot plugin system

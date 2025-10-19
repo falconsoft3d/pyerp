@@ -1,1 +1,0 @@
-from .paypal_config import PaypalConfig

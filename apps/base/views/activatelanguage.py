@@ -12,6 +12,7 @@ from django.shortcuts import redirect
 from django.urls import resolve, reverse
 from django.utils import translation
 from django.views.generic.base import View
+from django.conf import settings
 
 
 # ========================================================================== #
@@ -32,6 +33,6 @@ class ActivateLanguageView(LoginRequiredMixin, View):
         self.redirect_to = self.match.namespace + ':' + self.match.url_name
         # self.redirect_to = self.match.url_name
         translation.activate(self.language_code)
-        request.session[translation.LANGUAGE_SESSION_KEY] = self.language_code
+        request.session['django_language'] = self.language_code
 
         return redirect(reverse(self.redirect_to, kwargs=self.match.kwargs))
