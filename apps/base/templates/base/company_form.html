@@ -1,0 +1,345 @@
+{% extends "base/form.html" %}
+{% load static %}
+
+{% block headscripts %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/company-form.css' %}">
+{% endblock headscripts %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-building"></i>
+                            {% if object %}
+                                Actualizar {{ title }}
+                            {% else %}
+                                Crear {{ title }}
+                            {% endif %}
+                        </h3>
+                        <div class="card-tools">
+                            {% if object %}
+                                <a href="{% url detail_url pk=object.pk %}" class="btn btn-info btn-sm">
+                                    <i class="fas fa-eye"></i> Ver
+                                </a>
+                            {% endif %}
+                            <a href="{% url list_url %}" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-list"></i> Lista
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="card-body">
+                            {% csrf_token %}
+                            
+                            <!-- Información básica -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><i class="fas fa-info-circle"></i> Información Básica</h5>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+                                        {{ form.name }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+                                        {{ form.email }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
+                                        {{ form.phone }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.slogan.id_for_label }}">{{ form.slogan.label }}</label>
+                                        {{ form.slogan }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Dirección -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><i class="fas fa-map-marker-alt"></i> Dirección</h5>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="{{ form.street.id_for_label }}">{{ form.street.label }}</label>
+                                        {{ form.street }}
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.city.id_for_label }}">{{ form.city.label }}</label>
+                                        {{ form.city }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.postal_code.id_for_label }}">{{ form.postal_code.label }}</label>
+                                        {{ form.postal_code }}
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.country.id_for_label }}">{{ form.country.label }}</label>
+                                        {{ form.country }}
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.currency_id.id_for_label }}">{{ form.currency_id.label }}</label>
+                                        {{ form.currency_id }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Personalización de Colores -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><i class="fas fa-palette"></i> Personalización de Colores</h5>
+                                    <p class="text-muted">Configure los colores de la interfaz de su empresa</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <!-- Botones de temas predefinidos -->
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <label>Temas Predefinidos:</label>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" onclick="applyColorTheme('default')">
+                                            <span style="background: #563D7C; width: 12px; height: 12px; display: inline-block; border-radius: 50%; margin-right: 5px;"></span>
+                                            Por Defecto
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="applyColorTheme('blue')">
+                                            <span style="background: #026AA7; width: 12px; height: 12px; display: inline-block; border-radius: 50%; margin-right: 5px;"></span>
+                                            Azul
+                                        </button>
+                                        <button type="button" class="btn btn-outline-dark btn-sm" onclick="applyColorTheme('dark')">
+                                            <span style="background: #01363D; width: 12px; height: 12px; display: inline-block; border-radius: 50%; margin-right: 5px;"></span>
+                                            Oscuro
+                                        </button>
+                                        <button type="button" class="btn btn-outline-success btn-sm" onclick="applyColorTheme('green')">
+                                            <span style="background: #28a745; width: 12px; height: 12px; display: inline-block; border-radius: 50%; margin-right: 5px;"></span>
+                                            Verde
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm" onclick="applyColorTheme('red')">
+                                            <span style="background: #dc3545; width: 12px; height: 12px; display: inline-block; border-radius: 50%; margin-right: 5px;"></span>
+                                            Rojo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.main_color.id_for_label }}">
+                                            <i class="fas fa-circle" style="color: #563D7C;"></i>
+                                            {{ form.main_color.label }}
+                                        </label>
+                                        <div class="color-input-group">
+                                            {{ form.main_color }}
+                                        </div>
+                                        <small class="form-text text-muted">Color principal de la interfaz (barra lateral, header)</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.content_wrapper_color.id_for_label }}">
+                                            <i class="fas fa-circle" style="color: #f4f6f9;"></i>
+                                            {{ form.content_wrapper_color.label }}
+                                        </label>
+                                        <div class="color-input-group">
+                                            {{ form.content_wrapper_color }}
+                                        </div>
+                                        <small class="form-text text-muted">Color de fondo del área de contenido</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="{{ form.font_color.id_for_label }}">
+                                            <i class="fas fa-circle" style="color: #cbbde2;"></i>
+                                            {{ form.font_color.label }}
+                                        </label>
+                                        <div class="color-input-group">
+                                            {{ form.font_color }}
+                                        </div>
+                                        <small class="form-text text-muted">Color del texto en navegación</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Logo y otros campos -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><i class="fas fa-image"></i> Logo y Medios</h5>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.logo.id_for_label }}">{{ form.logo.label }}</label>
+                                        {{ form.logo }}
+                                        {% if object.logo %}
+                                            <div class="mt-2">
+                                                <img src="{{ object.logo.url }}" alt="Logo actual" style="max-height: 50px;">
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.description.id_for_label }}">{{ form.description.label }}</label>
+                                        {{ form.description }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Redes Sociales -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><i class="fas fa-share-alt"></i> Redes Sociales</h5>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.social_facebook.id_for_label }}">
+                                            <i class="fab fa-facebook"></i> {{ form.social_facebook.label }}
+                                        </label>
+                                        {{ form.social_facebook }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.social_instagram.id_for_label }}">
+                                            <i class="fab fa-instagram"></i> {{ form.social_instagram.label }}
+                                        </label>
+                                        {{ form.social_instagram }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.social_linkedin.id_for_label }}">
+                                            <i class="fab fa-linkedin"></i> {{ form.social_linkedin.label }}
+                                        </label>
+                                        {{ form.social_linkedin }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.social_youtube.id_for_label }}">
+                                            <i class="fab fa-youtube"></i> {{ form.social_youtube.label }}
+                                        </label>
+                                        {{ form.social_youtube }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.social_whatsapp.id_for_label }}">
+                                            <i class="fab fa-whatsapp"></i> {{ form.social_whatsapp.label }}
+                                        </label>
+                                        {{ form.social_whatsapp }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Coordenadas -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><i class="fas fa-map"></i> Coordenadas</h5>
+                                    <hr>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.latitude.id_for_label }}">{{ form.latitude.label }}</label>
+                                        {{ form.latitude }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="{{ form.longitude.id_for_label }}">{{ form.longitude.label }}</label>
+                                        {{ form.longitude }}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Errores del formulario -->
+                            {% if form.errors %}
+                                <div class="alert alert-danger">
+                                    <h6><i class="fas fa-exclamation-triangle"></i> Errores en el formulario:</h6>
+                                    {% for field, errors in form.errors.items %}
+                                        <ul class="mb-0">
+                                            {% for error in errors %}
+                                                <li>{{ field }}: {{ error }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-save"></i>
+                                {% if object %}Actualizar{% else %}Crear{% endif %}
+                            </button>
+                            <a href="{% url list_url %}" class="btn btn-secondary">
+                                <i class="fas fa-times"></i> Cancelar
+                            </a>
+                            {% if object %}
+                                <a href="{% url detail_url pk=object.pk %}" class="btn btn-info">
+                                    <i class="fas fa-eye"></i> Ver
+                                </a>
+                            {% endif %}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script src="{% static 'js/company-form.js' %}"></script>
+{% endblock scripts %}

@@ -68,14 +68,14 @@ class CompanyDetailView(LoginRequiredMixin, FatherDetailView):
 class CompanyCreateView(LoginRequiredMixin, FatherCreateView):
     model = PyCompany
     form_class = CompanyForm
-    template_name = 'base/form.html'
+    template_name = 'base/company_form.html'
 
 
 # ========================================================================== #
 class CompanyUpdateView(LoginRequiredMixin, FatherUpdateView):
     model = PyCompany
     form_class = CompanyForm
-    template_name = 'base/form.html'
+    template_name = 'base/company_form.html'
 
 
 # ========================================================================== #
