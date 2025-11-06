@@ -1,5 +1,5 @@
 # Core Django
-Django==4.2.16
+Django==4.2.26
 djangorestframework==3.14.0
 
 # UI and Forms
